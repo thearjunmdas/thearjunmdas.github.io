@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="[Arjun Das]">
+<meta name="description" content="*/15 * * * * cd ~/org &amp;amp;&amp;amp; ./backup_files_to_github.sh &amp;gt;&amp;gt; ~/cron_log.log 2&amp;gt;&amp;amp;1 Code Snippet 1: crontab entry  
+NOWT=$(date &#43;&amp;#34;%Y-%m-%d %T&amp;#34;) git add . git commit -m &amp;#34;$NOWTAutomated git push&amp;#34; git push Code Snippet 2: backup_files_to_github.sh   Checkout log rotation to avoid growth of cron_log.log
+  The cron-job invokes the backup_files_to_github.sh once every 15 minutes to backup the org files stored in the ~/org director
+A better guide for the uninitiated Backup to git If you are not familiar with git, please do learn-the-basics-of-git-in-under-10-minutes before you go ahead" />
+<meta name="keywords" content=", emacs, github, cron, logrotate" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="" />
+<link rel="canonical" href="/entries/backup-emacs-files-in-github/" />
+
+
+    <title>
+        
+            Backup org files in github :: ArMD  — Architect Manager Devloper
+        
+    </title>
+
+
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.2.1/css/flag-icon.min.css" rel="stylesheet"
+    type="text/css">
+
+
+
+<link rel="stylesheet" href="/main.54632d444438be2854ca854ce3930a518bbc4e69c8a3e29d8bfc017fab354909.css">
+
+
+
+
+
+
+<meta itemprop="name" content="Backup org files in github">
+<meta itemprop="description" content="*/15 * * * * cd ~/org &amp;&amp; ./backup_files_to_github.sh &gt;&gt; ~/cron_log.log 2&gt;&amp;1 Code Snippet 1: crontab entry  
+NOWT=$(date &#43;&#34;%Y-%m-%d %T&#34;) git add . git commit -m &#34;$NOWTAutomated git push&#34; git push Code Snippet 2: backup_files_to_github.sh   Checkout log rotation to avoid growth of cron_log.log
+  The cron-job invokes the backup_files_to_github.sh once every 15 minutes to backup the org files stored in the ~/org director
+A better guide for the uninitiated Backup to git If you are not familiar with git, please do learn-the-basics-of-git-in-under-10-minutes before you go ahead">
+<meta itemprop="datePublished" content="2020-08-18T10:07:00+05:30" />
+<meta itemprop="dateModified" content="2020-08-18T10:08:50+05:30" />
+<meta itemprop="wordCount" content="529">
+<meta itemprop="image" content=""/>
+
+
+
+<meta itemprop="keywords" content="emacs,github,cron,logrotate," />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content=""/>
+
+<meta name="twitter:title" content="Backup org files in github"/>
+<meta name="twitter:description" content="*/15 * * * * cd ~/org &amp;&amp; ./backup_files_to_github.sh &gt;&gt; ~/cron_log.log 2&gt;&amp;1 Code Snippet 1: crontab entry  
+NOWT=$(date &#43;&#34;%Y-%m-%d %T&#34;) git add . git commit -m &#34;$NOWTAutomated git push&#34; git push Code Snippet 2: backup_files_to_github.sh   Checkout log rotation to avoid growth of cron_log.log
+  The cron-job invokes the backup_files_to_github.sh once every 15 minutes to backup the org files stored in the ~/org director
+A better guide for the uninitiated Backup to git If you are not familiar with git, please do learn-the-basics-of-git-in-under-10-minutes before you go ahead"/>
+
+
+
+
+
+    <meta property="article:section" content="developer" />
+
+
+
+    <meta property="article:published_time" content="2020-08-18 10:07:00 &#43;0530 IST" />
+
+
+
+
+
+
+
+
+    </head>
+
+    <body class="">
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text">ArMD Diaries</span>
+            <span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="/entries/">Entries</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+
+            <span class="theme-toggle unselectable"><svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
+</svg>
+</span>
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+    <main class="post">
+
+        <div class="post-info">
+            
+            </p>
+        </div>
+
+        <article>
+            <h2 class="post-title"><a href="/entries/backup-emacs-files-in-github/">Backup org files in github</a></h2>
+
+            
+
+            <div class="post-content">
+                <p><a id="code-snippet--cron-entry"></a></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">*/15 * * * * cd ~/org <span style="color:#f92672">&amp;&amp;</span> ./backup_files_to_github.sh &gt;&gt; ~/cron_log.log 2&gt;&amp;<span style="color:#ae81ff">1</span>
+</code></pre></div><div class="src-block-caption">
+  <span class="src-block-number"><a href="#code-snippet--cron-entry">Code Snippet 1</a></span>:
+  crontab entry
+</div>
+<p><a id="code-snippet--back-up-file-to-github.sh"></a></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">NOWT<span style="color:#f92672">=</span><span style="color:#66d9ef">$(</span>date +<span style="color:#e6db74">&#34;%Y-%m-%d %T&#34;</span><span style="color:#66d9ef">)</span>
+git add .
+git commit -m <span style="color:#e6db74">&#34;</span>$NOWT<span style="color:#e6db74"> Automated git push&#34;</span>
+git push
+</code></pre></div><div class="src-block-caption">
+  <span class="src-block-number"><a href="#code-snippet--back-up-file-to-github.sh">Code Snippet 2</a></span>:
+  backup_files_to_github.sh
+</div>
+<div class="alert-warning alert">
+  <div></div>
+<p>Checkout <a href="#log-rotation">log rotation</a> to avoid growth of cron_log.log</p>
+</div>
+<hr>
+<p>The <a href="#code-snippet--cron-entry">cron-job</a> invokes the <a href="#code-snippet--back-up-file-to-github.sh">backup_files_to_github.sh</a> once every 15 minutes to backup the org files stored in the <code>~/org</code> director</p>
+<h2 id="a-better-guide-for-the-uninitiated">A better guide for the uninitiated</h2>
+<h3 id="backup-to-git">Backup to git</h3>
+<p>If you are not familiar with git, please do <a href="https://www.freecodecamp.org/news/learn-the-basics-of-git-in-under-10-minutes-da548267cc91">learn-the-basics-of-git-in-under-10-minutes</a> before you go ahead</p>
+<ol>
+<li>
+<p>Create a github repository (repo) with a readme and clone it to your local machine</p>
+</li>
+<li>
+<p>Copy your org files into this folder</p>
+</li>
+<li>
+<p>Create a file with name <em>backup_files_to_github.sh</em> in the folder where you have cloned the git repo</p>
+</li>
+<li>
+<p>Copy the first <a href="#code-snippet--back-up-file-to-github.sh">code snippet</a> to this file and save it</p>
+</li>
+<li>
+<p>Make the above <del>file</del> <code>shell script</code> executable</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">sudo chmod +x backup_files_to_github.sh
+</code></pre></div><div class="src-block-caption">
+  <span class="src-block-number">Code Snippet 3</span>:
+  Giving executable permissions to a file
+</div>
+</li>
+<li>
+<p>Make a few changes in your org files. Invoke the above shell script to see your changes getting uploaded to git</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">./backup_files_to_github.sh
+</code></pre></div><div class="src-block-caption">
+  <span class="src-block-number">Code Snippet 4</span>:
+  Invoking the shell script
+</div>
+</li>
+</ol>
+<h3 id="scheduling-backup">Scheduling backup</h3>
+<p><a href="https://en.wikipedia.org/wiki/Cron">Cron</a> is a job scheduler. You can use crontab to schedule a cron job (<a href="https://ole.michelsen.dk/blog/schedule-jobs-with-crontab-on-mac-osx">Quick Read</a>).</p>
+<ol>
+<li>
+<p>To start with, copy the <a href="#code-snippet--cron-entry">crontab entry</a> to a file named .crontab in your root directory <code>~/.crontab</code>. You can choose any directory, I have chosen root here for ease of explanation</p>
+</li>
+<li>
+<p>Run the following commands</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">## Check if any cronjobs are already scheduled</span>
+crontab -l
+
+<span style="color:#75715e">## Invoke crontab to pick the cronjobs from your file.</span>
+<span style="color:#75715e">## This command can be used to refresh the jobs when you modify the .crontab file as well</span>
+crontab ~/.crontab
+
+<span style="color:#75715e">## Check if the cronjobs are listed</span>
+crontab -l
+</code></pre></div></li>
+<li>
+<p>Once you have run these commands, the files will be backed up every 15<sup>th</sup> minute of an hour <code>hh:15, hh:30, hh:45, hh:00</code></p>
+</li>
+<li>
+<p>If you want to change the frequency of your backup, you can play with <a href="https://crontab.guru">cron expressions editor</a> to tweak <code>*/15 * * * *</code></p>
+</li>
+</ol>
+<h3 id="log-rotation">Log rotation</h3>
+<p>If you would like to avoid log creep, you could do it in two ways</p>
+<ul>
+<li>Delete this line <code>&gt;&gt; ~/cron_log.log 2&gt;&amp;1</code> from the <a href="#code-snippet--cron-entry">crontab entry</a>  (or)</li>
+<li>You could enable log rotation for the generated logs</li>
+</ul>
+<p>I like to have my logs, so I went with log-rotation and achieved it using <a href="https://linux.die.net/man/8/logrotate">logrotate</a>. Here is a 10-second guide</p>
+<ol>
+<li>
+<p>Install logrotate with homebrew</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">brew install logrotate
+
+<span style="color:#75715e"># This step might fail, we could always try</span>
+brew link logrotate
+</code></pre></div></li>
+<li>
+<p>Create a new file logrotate.conf and save it with the following content</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">~/cron_log.log <span style="color:#f92672">{</span>
+  daily
+  rotate <span style="color:#ae81ff">7</span>
+  compress
+<span style="color:#f92672">}</span>
+</code></pre></div></li>
+<li>
+<p>Force run log rotation to check if it works</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">logrotate --force ~/logrotate.conf
+
+<span style="color:#75715e">## If brew link failed before, use this command</span>
+<span style="color:#75715e">## You might need to replace 3.17.0 with the version that got installed</span>
+/usr/local/Cellar/logrotate/3.17.0/sbin/logrotate --force ~/logrotate.conf
+</code></pre></div></li>
+<li>
+<p>Logrotate only works if scheduled, so you would need to update your cron with another entry for logrotate</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">*/15 * * * * cd ~/org <span style="color:#f92672">&amp;&amp;</span> ./backup_files_to_github.sh &gt;&gt; ~/cron_log.log 2&gt;&amp;<span style="color:#ae81ff">1</span>
+<span style="color:#ae81ff">0</span> <span style="color:#ae81ff">11</span> */1 * * /usr/local/Cellar/logrotate/3.17.0/sbin/logrotate ~/tools/logrotate.conf
+</code></pre></div><div class="src-block-caption">
+  <span class="src-block-number">Code Snippet 5</span>:
+  Updated cronfile
+</div>
+</li>
+<li>
+<p>Invoke <code>crontab ~/.crontab</code> to refresh crontab with the new jobs</p>
+</li>
+</ol>
+<p>That&rsquo;s a quick <del>detailed</del> guide to help you folks with the emacs backup.</p>
+
+            </div>
+        </article>
+
+        <hr />
+
+        <div class="post-info">
+  				<p>
+  					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg><span class="tag"><a href="tags/emacs">emacs</a></span><span class="tag"><a href="tags/github">github</a></span><span class="tag"><a href="tags/cron">cron</a></span><span class="tag"><a href="tags/logrotate">logrotate</a></span>
+  				</p>
+  		</div>
+    </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>&copy; 2020</span>
+            
+            
+                <span><a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a></span>
+            
+            <span> <a href="entries/index.xml" target="_blank" title="rss"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a></span>
+        </div>
+    </div>
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span><a href="https://github.com/thearjunmdas"> <b>Ar</b>jun <b>M</b> <b>D</b>as</a></span>
+        </div>
+    </div>
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+
+<script type="text/javascript" src="/bundle.min.dc716e9092c9820b77f96da294d0120aeeb189b5bcea9752309ebea27fd53bbe6b13cffb2aca8ecf32525647ceb7001f76091de4199ac5a3caa432c070247f5b.js" integrity="sha512-3HFukJLJggt3&#43;W2ilNASCu6xibW86pdSMJ6&#43;on/VO75rE8/7KsqOzzJSVkfOtwAfdgkd5BmaxaPKpDLAcCR/Ww=="></script>
+
+
+
+    </body>
+</html>
