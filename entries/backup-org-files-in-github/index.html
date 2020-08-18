@@ -7,12 +7,12 @@
 <meta name="author" content="[Arjun Das]">
 <meta name="description" content="*/15 * * * * cd ~/org &amp;amp;&amp;amp; ./backup_files_to_github.sh &amp;gt;&amp;gt; ~/cron_log.log 2&amp;gt;&amp;amp;1 Code Snippet 1: crontab entry  
 NOWT=$(date &#43;&amp;#34;%Y-%m-%d %T&amp;#34;) git add . git commit -m &amp;#34;$NOWTAutomated git push&amp;#34; git push Code Snippet 2: backup_files_to_github.sh   Checkout log rotation to avoid growth of cron_log.log
-  The cron-job invokes the backup_files_to_github.sh once every 15 minutes to backup the org files stored in the ~/org director
+  The cron-job invokes the backup_files_to_github.sh once every 15 minutes to backup the org files stored in the ~/org directory
 A better guide for the uninitiated Backup to git If you are not familiar with git, please do learn-the-basics-of-git-in-under-10-minutes before you go ahead" />
 <meta name="keywords" content=", emacs, github, cron, logrotate" />
 <meta name="robots" content="noodp" />
 <meta name="theme-color" content="" />
-<link rel="canonical" href="/entries/backup-emacs-files-in-github/" />
+<link rel="canonical" href="/entries/backup-org-files-in-github/" />
 
 
     <title>
@@ -38,10 +38,10 @@ A better guide for the uninitiated Backup to git If you are not familiar with gi
 <meta itemprop="name" content="Backup org files in github">
 <meta itemprop="description" content="*/15 * * * * cd ~/org &amp;&amp; ./backup_files_to_github.sh &gt;&gt; ~/cron_log.log 2&gt;&amp;1 Code Snippet 1: crontab entry  
 NOWT=$(date &#43;&#34;%Y-%m-%d %T&#34;) git add . git commit -m &#34;$NOWTAutomated git push&#34; git push Code Snippet 2: backup_files_to_github.sh   Checkout log rotation to avoid growth of cron_log.log
-  The cron-job invokes the backup_files_to_github.sh once every 15 minutes to backup the org files stored in the ~/org director
+  The cron-job invokes the backup_files_to_github.sh once every 15 minutes to backup the org files stored in the ~/org directory
 A better guide for the uninitiated Backup to git If you are not familiar with git, please do learn-the-basics-of-git-in-under-10-minutes before you go ahead">
 <meta itemprop="datePublished" content="2020-08-18T10:07:00+05:30" />
-<meta itemprop="dateModified" content="2020-08-18T10:08:50+05:30" />
+<meta itemprop="dateModified" content="2020-08-18T19:04:10+05:30" />
 <meta itemprop="wordCount" content="529">
 <meta itemprop="image" content=""/>
 
@@ -55,7 +55,7 @@ A better guide for the uninitiated Backup to git If you are not familiar with gi
 <meta name="twitter:title" content="Backup org files in github"/>
 <meta name="twitter:description" content="*/15 * * * * cd ~/org &amp;&amp; ./backup_files_to_github.sh &gt;&gt; ~/cron_log.log 2&gt;&amp;1 Code Snippet 1: crontab entry  
 NOWT=$(date &#43;&#34;%Y-%m-%d %T&#34;) git add . git commit -m &#34;$NOWTAutomated git push&#34; git push Code Snippet 2: backup_files_to_github.sh   Checkout log rotation to avoid growth of cron_log.log
-  The cron-job invokes the backup_files_to_github.sh once every 15 minutes to backup the org files stored in the ~/org director
+  The cron-job invokes the backup_files_to_github.sh once every 15 minutes to backup the org files stored in the ~/org directory
 A better guide for the uninitiated Backup to git If you are not familiar with git, please do learn-the-basics-of-git-in-under-10-minutes before you go ahead"/>
 
 
@@ -98,18 +98,6 @@ A better guide for the uninitiated Backup to git If you are not familiar with gi
 
         <span class="header__right">
             
-                <nav class="menu">
-    <ul class="menu__inner"><li><a href="/entries/">Entries</a></li>
-    </ul>
-</nav>
-
-                <span class="menu-trigger">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                        <path d="M0 0h24v24H0z" fill="none"/>
-                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
-                    </svg>
-                </span>
-            
 
             <span class="theme-toggle unselectable"><svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
   <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
@@ -132,7 +120,7 @@ A better guide for the uninitiated Backup to git If you are not familiar with gi
         </div>
 
         <article>
-            <h2 class="post-title"><a href="/entries/backup-emacs-files-in-github/">Backup org files in github</a></h2>
+            <h2 class="post-title"><a href="/entries/backup-org-files-in-github/">Backup org files in github</a></h2>
 
             
 
@@ -157,7 +145,7 @@ git push
 <p>Checkout <a href="#log-rotation">log rotation</a> to avoid growth of cron_log.log</p>
 </div>
 <hr>
-<p>The <a href="#code-snippet--cron-entry">cron-job</a> invokes the <a href="#code-snippet--back-up-file-to-github.sh">backup_files_to_github.sh</a> once every 15 minutes to backup the org files stored in the <code>~/org</code> director</p>
+<p>The <a href="#code-snippet--cron-entry">cron-job</a> invokes the <a href="#code-snippet--back-up-file-to-github.sh">backup_files_to_github.sh</a> once every 15 minutes to backup the org files stored in the <code>~/org</code> directory</p>
 <h2 id="a-better-guide-for-the-uninitiated">A better guide for the uninitiated</h2>
 <h3 id="backup-to-git">Backup to git</h3>
 <p>If you are not familiar with git, please do <a href="https://www.freecodecamp.org/news/learn-the-basics-of-git-in-under-10-minutes-da548267cc91">learn-the-basics-of-git-in-under-10-minutes</a> before you go ahead</p>
