@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Tue, 18 Aug 2020 10:07:00 +0530</lastBuildDate>
+    <lastBuildDate>Thu, 20 Aug 2020 07:52:00 +0530</lastBuildDate>
     
 	<atom:link href="/tags/github/index.xml" rel="self" type="application/rss+xml" />
     
@@ -15,13 +15,12 @@
     <item>
       <title>Backup org files in github</title>
       <link>/entries/backup-org-files-in-github/</link>
-      <pubDate>Tue, 18 Aug 2020 10:07:00 +0530</pubDate>
+      <pubDate>Thu, 20 Aug 2020 07:52:00 +0530</pubDate>
       
       <guid>/entries/backup-org-files-in-github/</guid>
-      <description>*/15 * * * * cd ~/org &amp;amp;&amp;amp; ./backup_files_to_github.sh &amp;gt;&amp;gt; ~/cron_log.log 2&amp;gt;&amp;amp;1 Code Snippet 1: crontab entry  
-NOWT=$(date +&amp;#34;%Y-%m-%d %T&amp;#34;) git add . git commit -m &amp;#34;$NOWTAutomated git push&amp;#34; git push Code Snippet 2: backup_files_to_github.sh   Checkout log rotation to avoid growth of cron_log.log
-  The cron-job invokes the backup_files_to_github.sh once every 15 minutes to backup the org files stored in the ~/org directory
-A better guide for the uninitiated Backup to git If you are not familiar with git, please do learn-the-basics-of-git-in-under-10-minutes before you go ahead</description>
+      <description>NOWT=$(date +&amp;#34;%Y-%m-%d %T&amp;#34;) git add . git commit -m &amp;#34;$NOWTAutomated git push&amp;#34; git push Code Snippet 1: backup_files_to_github.sh  
+*/15 * * * * cd ~/org &amp;amp;&amp;amp; ./backup_files_to_github.sh &amp;gt;&amp;gt; ~/cron_log.log 2&amp;gt;&amp;amp;1 Code Snippet 2: crontab entry   Checkout log rotation to avoid growth of cron_log.log
+  I used the snippets here to backup my org files, however it can be used for any file. The cron-job invokes backup_files_to_github.</description>
     </item>
     
   </channel>
