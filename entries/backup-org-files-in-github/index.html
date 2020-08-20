@@ -7,7 +7,7 @@
 <meta name="author" content="[Arjun Das]">
 <meta name="description" content="NOWT=$(date &#43;&amp;#34;%Y-%m-%d %T&amp;#34;) git add . git commit -m &amp;#34;$NOWTAutomated git push&amp;#34; git push Code Snippet 1: backup_files_to_github.sh  
 */15 * * * * cd ~/org &amp;amp;&amp;amp; ./backup_files_to_github.sh &amp;gt;&amp;gt; ~/cron_log.log 2&amp;gt;&amp;amp;1 Code Snippet 2: crontab entry   Checkout log rotation to avoid growth of cron_log.log
-  I used the snippets here to backup my org files, however it can be used for any file. The cron-job invokes backup_files_to_github." />
+  I used the snippets here to backup my emacs org files, however it can be used for any file. The cron-job invokes backup_files_to_github." />
 <meta name="keywords" content=", emacs, github, cron, logrotate" />
 <meta name="robots" content="noodp" />
 <meta name="theme-color" content="" />
@@ -37,10 +37,10 @@
 <meta itemprop="name" content="Backup org files in github">
 <meta itemprop="description" content="NOWT=$(date &#43;&#34;%Y-%m-%d %T&#34;) git add . git commit -m &#34;$NOWTAutomated git push&#34; git push Code Snippet 1: backup_files_to_github.sh  
 */15 * * * * cd ~/org &amp;&amp; ./backup_files_to_github.sh &gt;&gt; ~/cron_log.log 2&gt;&amp;1 Code Snippet 2: crontab entry   Checkout log rotation to avoid growth of cron_log.log
-  I used the snippets here to backup my org files, however it can be used for any file. The cron-job invokes backup_files_to_github.">
+  I used the snippets here to backup my emacs org files, however it can be used for any file. The cron-job invokes backup_files_to_github.">
 <meta itemprop="datePublished" content="2020-08-20T07:52:00+05:30" />
-<meta itemprop="dateModified" content="2020-08-20T07:52:53+05:30" />
-<meta itemprop="wordCount" content="553">
+<meta itemprop="dateModified" content="2020-08-20T08:02:46+05:30" />
+<meta itemprop="wordCount" content="549">
 <meta itemprop="image" content=""/>
 
 
@@ -53,7 +53,7 @@
 <meta name="twitter:title" content="Backup org files in github"/>
 <meta name="twitter:description" content="NOWT=$(date &#43;&#34;%Y-%m-%d %T&#34;) git add . git commit -m &#34;$NOWTAutomated git push&#34; git push Code Snippet 1: backup_files_to_github.sh  
 */15 * * * * cd ~/org &amp;&amp; ./backup_files_to_github.sh &gt;&gt; ~/cron_log.log 2&gt;&amp;1 Code Snippet 2: crontab entry   Checkout log rotation to avoid growth of cron_log.log
-  I used the snippets here to backup my org files, however it can be used for any file. The cron-job invokes backup_files_to_github."/>
+  I used the snippets here to backup my emacs org files, however it can be used for any file. The cron-job invokes backup_files_to_github."/>
 
 
 
@@ -154,7 +154,7 @@ git push
 <p>Checkout <a href="#log-rotation">log rotation</a> to avoid growth of cron_log.log</p>
 </div>
 <hr>
-<p>I used the snippets here to backup my org files, however it can be used for any file. The <a href="#code-snippet--cron-entry">cron-job</a> invokes <a href="#code-snippet--back-up-file-to-github.sh">backup_files_to_github.sh</a>, once every 15 minutes, to push org files available in the <code>~/org</code> directory to a github repository.</p>
+<p>I used the snippets here to backup my emacs org files, however it can be used for any file. The <a href="#code-snippet--cron-entry">cron-job</a> invokes <a href="#code-snippet--back-up-file-to-github.sh">backup_files_to_github.sh</a>, once every 15 minutes, to push org files available in the <code>~/org</code> directory to a github repository.</p>
 <h2 id="a-better-guide-for-the-uninitiated">A better guide for the uninitiated</h2>
 <h3 id="backup-to-git">Backup to git</h3>
 <p>If you are not familiar with git, please do <a href="https://www.freecodecamp.org/news/learn-the-basics-of-git-in-under-10-minutes-da548267cc91">learn-the-basics-of-git-in-under-10-minutes</a> before you go ahead.</p>
@@ -163,13 +163,10 @@ git push
 <p>Create a github repository (repo) with a readme and clone it to your local machine</p>
 </li>
 <li>
-<p>Copy your org files into this folder</p>
+<p>Copy your files into this folder</p>
 </li>
 <li>
-<p>Create a file with name <em>backup_files_to_github.sh</em> in the folder where you have cloned the git repo</p>
-</li>
-<li>
-<p>Copy the first <a href="#code-snippet--back-up-file-to-github.sh">code snippet</a> to this file and save it</p>
+<p>Copy the first <a href="#code-snippet--back-up-file-to-github.sh">code snippet</a> to a file named <em>backup_files_to_github.sh</em> and save it in the folder where you have cloned the git repo</p>
 </li>
 <li>
 <p>Make the above <del>file</del> <code>shell script</code> executable</p>

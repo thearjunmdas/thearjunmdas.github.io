@@ -20,7 +20,7 @@
       <guid>/entries/backup-org-files-in-github/</guid>
       <description>NOWT=$(date +&amp;#34;%Y-%m-%d %T&amp;#34;) git add . git commit -m &amp;#34;$NOWTAutomated git push&amp;#34; git push Code Snippet 1: backup_files_to_github.sh  
 */15 * * * * cd ~/org &amp;amp;&amp;amp; ./backup_files_to_github.sh &amp;gt;&amp;gt; ~/cron_log.log 2&amp;gt;&amp;amp;1 Code Snippet 2: crontab entry   Checkout log rotation to avoid growth of cron_log.log
-  I used the snippets here to backup my org files, however it can be used for any file. The cron-job invokes backup_files_to_github.</description>
+  I used the snippets here to backup my emacs org files, however it can be used for any file. The cron-job invokes backup_files_to_github.</description>
     </item>
     
   </channel>
