@@ -5,9 +5,10 @@
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="author" content="[Arjun Das]">
-<meta name="description" content="NOWT=$(date &#43;&amp;#34;%Y-%m-%d %T&amp;#34;) git add . git commit -m &amp;#34;$NOWTAutomated git push&amp;#34; git push Code Snippet 1: backup_files_to_github.sh  
-*/15 * * * * cd ~/org &amp;amp;&amp;amp; ./backup_files_to_github.sh &amp;gt;&amp;gt; ~/cron_log.log 2&amp;gt;&amp;amp;1 Code Snippet 2: crontab entry   Checkout log rotation to avoid growth of cron_log.log
-  I used the snippets here to backup my emacs org files, however it can be used for any file. The cron-job invokes backup_files_to_github." />
+<meta name="description" content="tl;dr I used the snippets here to backup my emacs org files, however it can be used for any file. The cron-job invokes backup_files_to_github.sh, once every 15 minutes, to push org files available in the ~/org directory to a github repository.
+
+NOWT=$(date &#43;&amp;#34;%Y-%m-%d %T&amp;#34;) git add . git commit -m &amp;#34;$NOWTAutomated git push&amp;#34; git push Code Snippet 1: backup_files_to_github.sh  
+*/15 * * * * cd ~/org &amp;amp;&amp;amp; ." />
 <meta name="keywords" content=", emacs, github, cron, logrotate" />
 <meta name="robots" content="noodp" />
 <meta name="theme-color" content="" />
@@ -35,12 +36,13 @@
 
 
 <meta itemprop="name" content="Backup org files in github">
-<meta itemprop="description" content="NOWT=$(date &#43;&#34;%Y-%m-%d %T&#34;) git add . git commit -m &#34;$NOWTAutomated git push&#34; git push Code Snippet 1: backup_files_to_github.sh  
-*/15 * * * * cd ~/org &amp;&amp; ./backup_files_to_github.sh &gt;&gt; ~/cron_log.log 2&gt;&amp;1 Code Snippet 2: crontab entry   Checkout log rotation to avoid growth of cron_log.log
-  I used the snippets here to backup my emacs org files, however it can be used for any file. The cron-job invokes backup_files_to_github.">
+<meta itemprop="description" content="tl;dr I used the snippets here to backup my emacs org files, however it can be used for any file. The cron-job invokes backup_files_to_github.sh, once every 15 minutes, to push org files available in the ~/org directory to a github repository.
+
+NOWT=$(date &#43;&#34;%Y-%m-%d %T&#34;) git add . git commit -m &#34;$NOWTAutomated git push&#34; git push Code Snippet 1: backup_files_to_github.sh  
+*/15 * * * * cd ~/org &amp;&amp; .">
 <meta itemprop="datePublished" content="2020-08-20T07:52:00+05:30" />
-<meta itemprop="dateModified" content="2020-08-20T08:02:46+05:30" />
-<meta itemprop="wordCount" content="549">
+<meta itemprop="dateModified" content="2020-08-24T07:51:40+05:30" />
+<meta itemprop="wordCount" content="572">
 <meta itemprop="image" content=""/>
 
 
@@ -51,9 +53,10 @@
 <meta name="twitter:image" content=""/>
 
 <meta name="twitter:title" content="Backup org files in github"/>
-<meta name="twitter:description" content="NOWT=$(date &#43;&#34;%Y-%m-%d %T&#34;) git add . git commit -m &#34;$NOWTAutomated git push&#34; git push Code Snippet 1: backup_files_to_github.sh  
-*/15 * * * * cd ~/org &amp;&amp; ./backup_files_to_github.sh &gt;&gt; ~/cron_log.log 2&gt;&amp;1 Code Snippet 2: crontab entry   Checkout log rotation to avoid growth of cron_log.log
-  I used the snippets here to backup my emacs org files, however it can be used for any file. The cron-job invokes backup_files_to_github."/>
+<meta name="twitter:description" content="tl;dr I used the snippets here to backup my emacs org files, however it can be used for any file. The cron-job invokes backup_files_to_github.sh, once every 15 minutes, to push org files available in the ~/org directory to a github repository.
+
+NOWT=$(date &#43;&#34;%Y-%m-%d %T&#34;) git add . git commit -m &#34;$NOWTAutomated git push&#34; git push Code Snippet 1: backup_files_to_github.sh  
+*/15 * * * * cd ~/org &amp;&amp; ."/>
 
 
 
@@ -134,7 +137,9 @@
             
 
             <div class="post-content">
-                <p><a id="code-snippet--back-up-file-to-github.sh"></a></p>
+                <p>tl;dr
+I used the snippets here to backup my emacs org files, however it can be used for any file. The <a href="#code-snippet--cron-entry">cron-job</a> invokes <a href="#code-snippet--back-up-file-to-github.sh">backup_files_to_github.sh</a>, once every 15 minutes, to push org files available in the <code>~/org</code> directory to a github repository.</p>
+<p><a id="code-snippet--back-up-file-to-github.sh"></a></p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">NOWT<span style="color:#f92672">=</span><span style="color:#66d9ef">$(</span>date +<span style="color:#e6db74">&#34;%Y-%m-%d %T&#34;</span><span style="color:#66d9ef">)</span>
 git add .
 git commit -m <span style="color:#e6db74">&#34;</span>$NOWT<span style="color:#e6db74"> Automated git push&#34;</span>
@@ -154,7 +159,6 @@ git push
 <p>Checkout <a href="#log-rotation">log rotation</a> to avoid growth of cron_log.log</p>
 </div>
 <hr>
-<p>I used the snippets here to backup my emacs org files, however it can be used for any file. The <a href="#code-snippet--cron-entry">cron-job</a> invokes <a href="#code-snippet--back-up-file-to-github.sh">backup_files_to_github.sh</a>, once every 15 minutes, to push org files available in the <code>~/org</code> directory to a github repository.</p>
 <h2 id="a-better-guide-for-the-uninitiated">A better guide for the uninitiated</h2>
 <h3 id="backup-to-git">Backup to git</h3>
 <p>If you are not familiar with git, please do <a href="https://www.freecodecamp.org/news/learn-the-basics-of-git-in-under-10-minutes-da548267cc91">learn-the-basics-of-git-in-under-10-minutes</a> before you go ahead.</p>
@@ -166,7 +170,7 @@ git push
 <p>Copy your files into this folder</p>
 </li>
 <li>
-<p>Copy the first <a href="#code-snippet--back-up-file-to-github.sh">code snippet</a> to a file named <em>backup_files_to_github.sh</em> and save it in the folder where you have cloned the git repo</p>
+<p>Copy <a href="#code-snippet--back-up-file-to-github.sh">code snippet 1</a> to a file named <em>backup_files_to_github.sh</em> and save it in the folder where you have cloned the git repo</p>
 </li>
 <li>
 <p>Make the above <del>file</del> <code>shell script</code> executable</p>
@@ -186,7 +190,7 @@ git push
 </li>
 </ol>
 <h3 id="scheduling-backup">Scheduling backup</h3>
-<p>We will create an entry in crontab for periodical invocation of the shell script by <a href="https://en.wikipedia.org/wiki/Cron">cron</a> (<a href="https://ole.michelsen.dk/blog/schedule-jobs-with-crontab-on-mac-osx">Quick Read</a> on crontab).</p>
+<p>We will schedule the shell script invocation using crontab (<a href="https://ole.michelsen.dk/blog/schedule-jobs-with-crontab-on-mac-osx">Quick Read</a> on crontab) and <a href="https://en.wikipedia.org/wiki/Cron">cron</a>.</p>
 <p><a id="code-snippet--local-cron-entry"></a></p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">*/15 * * * * cd ~/org <span style="color:#f92672">&amp;&amp;</span> ./backup_files_to_github.sh &gt;&gt; ~/cron_log.log 2&gt;&amp;<span style="color:#ae81ff">1</span>
 </code></pre></div><div class="src-block-caption">
@@ -199,6 +203,7 @@ git push
 </li>
 <li>
 <p>Run the following commands</p>
+<p><a id="code-snippet--crontab-commands"></a></p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">## List scheduled cronjobs</span>
 crontab -l
 
@@ -208,7 +213,11 @@ crontab ~/.crontab
 
 <span style="color:#75715e">## Check if your cronjobs are listed</span>
 crontab -l
-</code></pre></div></li>
+</code></pre></div><div class="src-block-caption">
+  <span class="src-block-number"><a href="#code-snippet--crontab-commands">Code Snippet 6</a></span>:
+  crontab commands
+</div>
+</li>
 <li>
 <p>Once you have run these commands, the files will be backed up every 15<sup>th</sup> minute of an hour <code>hh:15, hh:30, hh:45, hh:00</code></p>
 </li>
@@ -217,50 +226,66 @@ crontab -l
 </li>
 </ol>
 <h3 id="log-rotation">Log rotation</h3>
-<p>You can avoid log creep in two ways</p>
+<p>You can avoid log creep, unprecedented growth of log files, in two ways</p>
 <ul>
-<li>Delete this line <code>&gt;&gt; ~/cron_log.log 2&gt;&amp;1</code> from the <a href="#code-snippet--local-cron-entry">crontab entry</a>  (or)</li>
+<li>Delete this line <code>&gt;&gt; ~/cron_log.log 2&gt;&amp;1</code> from <a href="#code-snippet--local-cron-entry">code-snippet 5</a> (or)</li>
 <li>Enable log-rotation for the generated logs</li>
 </ul>
 <p>I like to have my logs, so I went with log-rotation and achieved it using <a href="https://linux.die.net/man/8/logrotate">logrotate</a>. Here is a 10-second guide</p>
 <ol>
 <li>
 <p>Install logrotate with homebrew</p>
+<p><a id="code-snippet--logrotate-install"></a></p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">brew install logrotate
 
 <span style="color:#75715e"># This step might fail, we could still try</span>
 brew link logrotate
-</code></pre></div></li>
+</code></pre></div><div class="src-block-caption">
+  <span class="src-block-number"><a href="#code-snippet--logrotate-install">Code Snippet 7</a></span>:
+  logrotate installation
+</div>
+</li>
 <li>
 <p>Create a new file <em>logrotate.conf</em> and save it with the following content</p>
+<p><a id="code-snippet--logrotate-conf"></a></p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">~/cron_log.log <span style="color:#f92672">{</span>
   daily
   rotate <span style="color:#ae81ff">7</span>
   compress
 <span style="color:#f92672">}</span>
-</code></pre></div></li>
+</code></pre></div><div class="src-block-caption">
+  <span class="src-block-number"><a href="#code-snippet--logrotate-conf">Code Snippet 8</a></span>:
+  logrotate.conf
+</div>
+</li>
 <li>
 <p>Force run log rotation to check if it works</p>
+<p><a id="code-snippet--invoke-logrotation"></a></p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">logrotate --force ~/logrotate.conf
 
 <span style="color:#75715e">## If brew link failed before, use this command</span>
 <span style="color:#75715e">## You might need to replace 3.17.0 with the version that got installed</span>
 /usr/local/Cellar/logrotate/3.17.0/sbin/logrotate --force ~/logrotate.conf
-</code></pre></div></li>
+</code></pre></div><div class="src-block-caption">
+  <span class="src-block-number"><a href="#code-snippet--invoke-logrotation">Code Snippet 9</a></span>:
+  Invoke logrotation
+</div>
+</li>
 <li>
-<p>Logrotate only works if scheduled, so you would need to update your crontab file with another entry for logrotate</p>
+<p>Logrotate only works if scheduled, so you would need to update your crontab file (<a href="#code-snippet--cron-entry">code snippet 2</a>) with another entry for logrotate</p>
+<p><a id="code-snippet--final-cronfile"></a></p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">*/15 * * * * cd ~/org <span style="color:#f92672">&amp;&amp;</span> ./backup_files_to_github.sh &gt;&gt; ~/cron_log.log 2&gt;&amp;<span style="color:#ae81ff">1</span>
 <span style="color:#ae81ff">0</span> <span style="color:#ae81ff">11</span> */1 * * /usr/local/Cellar/logrotate/3.17.0/sbin/logrotate ~/tools/logrotate.conf
 </code></pre></div><div class="src-block-caption">
-  <span class="src-block-number">Code Snippet 6</span>:
-  Updated cronfile
+  <span class="src-block-number"><a href="#code-snippet--final-cronfile">Code Snippet 10</a></span>:
+  cronfile with logrotate updated
 </div>
 </li>
 <li>
 <p>Invoke <code>crontab ~/.crontab</code> to refresh crontab with the new jobs</p>
 </li>
 </ol>
-<p>That&rsquo;s a quick <del>detailed</del> guide on  backing up files in github.</p>
+<p>That&rsquo;s a <del>detailed</del> quick guide for backing up files in github.</p>
 
             </div>
         </article>
@@ -304,6 +329,20 @@ brew link logrotate
 
 
 <script type="text/javascript" src="/bundle.min.dc716e9092c9820b77f96da294d0120aeeb189b5bcea9752309ebea27fd53bbe6b13cffb2aca8ecf32525647ceb7001f76091de4199ac5a3caa432c070247f5b.js" integrity="sha512-3HFukJLJggt3&#43;W2ilNASCu6xibW86pdSMJ6&#43;on/VO75rE8/7KsqOzzJSVkfOtwAfdgkd5BmaxaPKpDLAcCR/Ww=="></script>
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-175966654-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
 
 
 
