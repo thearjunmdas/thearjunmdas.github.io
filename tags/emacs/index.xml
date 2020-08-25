@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>emacs on ArMD</title>
-    <link>/tags/emacs/</link>
+    <link>https://thearjunmdas.github.io/tags/emacs/</link>
     <description>Recent content in emacs on ArMD</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
     <lastBuildDate>Thu, 20 Aug 2020 07:52:00 +0530</lastBuildDate>
     
-	<atom:link href="/tags/emacs/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://thearjunmdas.github.io/tags/emacs/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Backup org files in github</title>
-      <link>/entries/backup-org-files-in-github/</link>
+      <link>https://thearjunmdas.github.io/entries/backup-org-files-in-github/</link>
       <pubDate>Thu, 20 Aug 2020 07:52:00 +0530</pubDate>
       
-      <guid>/entries/backup-org-files-in-github/</guid>
+      <guid>https://thearjunmdas.github.io/entries/backup-org-files-in-github/</guid>
       <description>tl;dr I used the snippets here to backup my emacs org files, however it can be used for any file. The cron-job invokes backup_files_to_github.sh, once every 15 minutes, to push org files available in the ~/org directory to a github repository.
 
 NOWT=$(date +&amp;#34;%Y-%m-%d %T&amp;#34;) git add . git commit -m &amp;#34;$NOWTAutomated git push&amp;#34; git push Code Snippet 1: backup_files_to_github.sh  
