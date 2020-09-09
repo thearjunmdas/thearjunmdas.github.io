@@ -13,6 +13,16 @@
     
     
     <item>
+      <title>Authorization header in Swagger UI</title>
+      <link>https://thearjunmdas.github.io/entries/authorization-field-in-swagger-ui/</link>
+      <pubDate>Wed, 09 Sep 2020 05:51:00 +0530</pubDate>
+      
+      <guid>https://thearjunmdas.github.io/entries/authorization-field-in-swagger-ui/</guid>
+      <description>I was setting up JWT authentication for APIs of my spring boot app and wanted to test them from swagger-ui, but could not find a direct answer in my google searches. So sending this to futureMe adding an entry here on how to do this.
+The quickest way to get this done is to configure a global parameter in the Docket bean, which will show up on all APIs. I have added my swagger config here.</description>
+    </item>
+    
+    <item>
       <title>Backup org files in github</title>
       <link>https://thearjunmdas.github.io/entries/backup-org-files-in-github/</link>
       <pubDate>Thu, 20 Aug 2020 07:52:00 +0530</pubDate>

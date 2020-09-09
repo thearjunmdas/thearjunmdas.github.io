@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>developer on ArMD</title>
-    <link>https://thearjunmdas.github.io/categories/developer/</link>
-    <description>Recent content in developer on ArMD</description>
+    <title>authorization on ArMD</title>
+    <link>https://thearjunmdas.github.io/tags/authorization/</link>
+    <description>Recent content in authorization on ArMD</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
     <lastBuildDate>Wed, 09 Sep 2020 05:51:00 +0530</lastBuildDate>
     
-	<atom:link href="https://thearjunmdas.github.io/categories/developer/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://thearjunmdas.github.io/tags/authorization/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -20,18 +20,6 @@
       <guid>https://thearjunmdas.github.io/entries/authorization-field-in-swagger-ui/</guid>
       <description>I was setting up JWT authentication for APIs of my spring boot app and wanted to test them from swagger-ui, but could not find a direct answer in my google searches. So sending this to futureMe adding an entry here on how to do this.
 The quickest way to get this done is to configure a global parameter in the Docket bean, which will show up on all APIs. I have added my swagger config here.</description>
-    </item>
-    
-    <item>
-      <title>Backup org files in github</title>
-      <link>https://thearjunmdas.github.io/entries/backup-org-files-in-github/</link>
-      <pubDate>Thu, 20 Aug 2020 07:52:00 +0530</pubDate>
-      
-      <guid>https://thearjunmdas.github.io/entries/backup-org-files-in-github/</guid>
-      <description>tl;dr I used the snippets here to backup my emacs org files, however it can be used for any file. The cron-job invokes backup_files_to_github.sh, once every 15 minutes, to push org files available in the ~/org directory to a github repository.
-
-NOWT=$(date +&amp;#34;%Y-%m-%d %T&amp;#34;) git add . git commit -m &amp;#34;$NOWTAutomated git push&amp;#34; git push Code Snippet 1: backup_files_to_github.sh  
-*/15 * * * * cd ~/org &amp;amp;&amp;amp; .</description>
     </item>
     
   </channel>
