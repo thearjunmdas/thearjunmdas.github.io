@@ -18,7 +18,7 @@
       <pubDate>Wed, 09 Sep 2020 05:51:00 +0530</pubDate>
       
       <guid>https://thearjunmdas.github.io/entries/authorization-field-in-swagger-ui/</guid>
-      <description>I was setting up JWT authentication for APIs of my spring boot app and wanted to test them from swagger-ui, but could not find a direct answer in my google searches. So sending this to futureMe adding an entry here on how to do this.
+      <description>I was setting up JWT authentication for APIs of my spring boot app and wanted to test them from swagger-ui, but could not find a direct answer in my google searches. So adding my tweaks to get this done, as an entry here.
 The quickest way to get this done is to configure a global parameter in the Docket bean, which will show up on all APIs. I have added my swagger config here.</description>
     </item>
     
