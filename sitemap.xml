@@ -4,7 +4,32 @@
   
   <url>
     <loc>https://thearjunmdas.github.io/</loc>
-    <lastmod>2020-09-23T05:44:51+05:30</lastmod>
+    <lastmod>2020-11-11T05:44:04+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thearjunmdas.github.io/categories/</loc>
+    <lastmod>2020-11-11T05:44:04+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thearjunmdas.github.io/categories/developer/</loc>
+    <lastmod>2020-11-11T05:44:04+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thearjunmdas.github.io/entries/encrypt-decrypt-files-with-git/</loc>
+    <lastmod>2020-11-11T05:44:04+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thearjunmdas.github.io/tags/git/</loc>
+    <lastmod>2020-11-11T05:44:04+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thearjunmdas.github.io/tags/</loc>
+    <lastmod>2020-11-11T05:44:04+05:30</lastmod>
   </url>
   
   <url>
@@ -14,16 +39,6 @@
   
   <url>
     <loc>https://thearjunmdas.github.io/entries/authorization-field-in-swagger-ui/</loc>
-    <lastmod>2020-09-23T05:44:51+05:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://thearjunmdas.github.io/categories/</loc>
-    <lastmod>2020-09-23T05:44:51+05:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://thearjunmdas.github.io/categories/developer/</loc>
     <lastmod>2020-09-23T05:44:51+05:30</lastmod>
   </url>
   
@@ -38,38 +53,33 @@
   </url>
   
   <url>
-    <loc>https://thearjunmdas.github.io/tags/</loc>
-    <lastmod>2020-09-23T05:44:51+05:30</lastmod>
-  </url>
-  
-  <url>
     <loc>https://thearjunmdas.github.io/entries/</loc>
     <lastmod>2020-08-21T15:33:01+05:30</lastmod>
   </url>
   
   <url>
     <loc>https://thearjunmdas.github.io/entries/backup-org-files-in-github/</loc>
-    <lastmod>2020-08-27T19:03:18+05:30</lastmod>
+    <lastmod>2020-10-07T06:44:52+05:30</lastmod>
   </url>
   
   <url>
     <loc>https://thearjunmdas.github.io/tags/cron/</loc>
-    <lastmod>2020-08-27T19:03:18+05:30</lastmod>
+    <lastmod>2020-10-07T06:44:52+05:30</lastmod>
   </url>
   
   <url>
     <loc>https://thearjunmdas.github.io/tags/emacs/</loc>
-    <lastmod>2020-08-27T19:03:18+05:30</lastmod>
+    <lastmod>2020-10-07T06:44:52+05:30</lastmod>
   </url>
   
   <url>
     <loc>https://thearjunmdas.github.io/tags/github/</loc>
-    <lastmod>2020-08-27T19:03:18+05:30</lastmod>
+    <lastmod>2020-10-07T06:44:52+05:30</lastmod>
   </url>
   
   <url>
     <loc>https://thearjunmdas.github.io/tags/logrotate/</loc>
-    <lastmod>2020-08-27T19:03:18+05:30</lastmod>
+    <lastmod>2020-10-07T06:44:52+05:30</lastmod>
   </url>
   
 </urlset>

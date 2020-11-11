@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="author" content="[Arjun Das]">
-<meta name="description" content="tl;dr I used the snippets here to backup my emacs org files, however it can be used for any file. The cron-job invokes backup_files_to_github.sh, once every 15 minutes, to push org files available in the ~/org directory to a github repository.
+<meta name="description" content="tl;dr I used the following code snippets to backup my emacs org files. A quick explanation would be - The cron-job invokes backup_files_to_github.sh, once every 15 minutes, to push modified org files in the ~/org directory to a github repository. You could use this to backup any files.
 
 NOWT=$(date &#43;&amp;#34;%Y-%m-%d %T&amp;#34;) git add . git commit -m &amp;#34;$NOWTAutomated git push&amp;#34; git push Code Snippet 1: backup_files_to_github.sh  
 */15 * * * * cd ~/org &amp;amp;&amp;amp; ." />
@@ -28,7 +28,7 @@ NOWT=$(date &#43;&amp;#34;%Y-%m-%d %T&amp;#34;) git add . git commit -m &amp;#34
 
 
 
-<link rel="stylesheet" href="/main.54632d444438be2854ca854ce3930a518bbc4e69c8a3e29d8bfc017fab354909.css">
+<link rel="stylesheet" href="/main.19311ff789e7e29470d0ed5d5496a2b9ba8ade498bd0d2823729087db6171dea.css">
 
 
 
@@ -36,13 +36,13 @@ NOWT=$(date &#43;&amp;#34;%Y-%m-%d %T&amp;#34;) git add . git commit -m &amp;#34
 
 
 <meta itemprop="name" content="Backup org files in github">
-<meta itemprop="description" content="tl;dr I used the snippets here to backup my emacs org files, however it can be used for any file. The cron-job invokes backup_files_to_github.sh, once every 15 minutes, to push org files available in the ~/org directory to a github repository.
+<meta itemprop="description" content="tl;dr I used the following code snippets to backup my emacs org files. A quick explanation would be - The cron-job invokes backup_files_to_github.sh, once every 15 minutes, to push modified org files in the ~/org directory to a github repository. You could use this to backup any files.
 
 NOWT=$(date &#43;&#34;%Y-%m-%d %T&#34;) git add . git commit -m &#34;$NOWTAutomated git push&#34; git push Code Snippet 1: backup_files_to_github.sh  
 */15 * * * * cd ~/org &amp;&amp; .">
 <meta itemprop="datePublished" content="2020-08-20T07:52:00+05:30" />
-<meta itemprop="dateModified" content="2020-08-27T19:03:18+05:30" />
-<meta itemprop="wordCount" content="572">
+<meta itemprop="dateModified" content="2020-10-07T06:44:52+05:30" />
+<meta itemprop="wordCount" content="579">
 <meta itemprop="image" content="https://thearjunmdas.github.io/"/>
 
 
@@ -53,7 +53,7 @@ NOWT=$(date &#43;&#34;%Y-%m-%d %T&#34;) git add . git commit -m &#34;$NOWTAutoma
 <meta name="twitter:image" content="https://thearjunmdas.github.io/"/>
 
 <meta name="twitter:title" content="Backup org files in github"/>
-<meta name="twitter:description" content="tl;dr I used the snippets here to backup my emacs org files, however it can be used for any file. The cron-job invokes backup_files_to_github.sh, once every 15 minutes, to push org files available in the ~/org directory to a github repository.
+<meta name="twitter:description" content="tl;dr I used the following code snippets to backup my emacs org files. A quick explanation would be - The cron-job invokes backup_files_to_github.sh, once every 15 minutes, to push modified org files in the ~/org directory to a github repository. You could use this to backup any files.
 
 NOWT=$(date &#43;&#34;%Y-%m-%d %T&#34;) git add . git commit -m &#34;$NOWTAutomated git push&#34; git push Code Snippet 1: backup_files_to_github.sh  
 */15 * * * * cd ~/org &amp;&amp; ."/>
@@ -138,7 +138,7 @@ NOWT=$(date &#43;&#34;%Y-%m-%d %T&#34;) git add . git commit -m &#34;$NOWTAutoma
 
             <div class="post-content">
                 <p>tl;dr
-I used the snippets here to backup my emacs org files, however it can be used for any file. The <a href="#code-snippet--cron-entry">cron-job</a> invokes <a href="#code-snippet--back-up-file-to-github.sh">backup_files_to_github.sh</a>, once every 15 minutes, to push org files available in the <code>~/org</code> directory to a github repository.</p>
+I used the following code snippets to backup my emacs org files. A quick explanation would be - The <a href="#code-snippet--cron-entry">cron-job</a> invokes <a href="#code-snippet--back-up-file-to-github.sh">backup_files_to_github.sh</a>, once every 15 minutes, to push modified org files in the <code>~/org</code> directory to a github repository. You could use this to backup any files.</p>
 <p><a id="code-snippet--back-up-file-to-github.sh"></a></p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">NOWT<span style="color:#f92672">=</span><span style="color:#66d9ef">$(</span>date +<span style="color:#e6db74">&#34;%Y-%m-%d %T&#34;</span><span style="color:#66d9ef">)</span>
 git add .
