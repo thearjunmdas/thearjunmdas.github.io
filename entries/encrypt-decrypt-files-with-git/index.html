@@ -41,8 +41,8 @@ Installations   We will use git-crypt to encrypt/decrypt files. Read more about 
 brew install git-crypt Code Snippet 1: Install git-crypt    Install gpg
 brew install gpg Code Snippet 2: Install gpg    Setup git-crypt for your github repository Clone your repository or cd into the folder where you have already cloned your repository. Initialise git-crypt in the folder.">
 <meta itemprop="datePublished" content="2020-10-21T09:38:00+05:30" />
-<meta itemprop="dateModified" content="2020-11-11T05:44:04+05:30" />
-<meta itemprop="wordCount" content="297">
+<meta itemprop="dateModified" content="2020-11-11T05:57:46+05:30" />
+<meta itemprop="wordCount" content="299">
 <meta itemprop="image" content="https://thearjunmdas.github.io/"/>
 
 
@@ -168,7 +168,7 @@ brew install gpg Code Snippet 2: Install gpg    Setup git-crypt for your github 
 <h2 id="encrypting-your-files">Encrypting your files</h2>
 <p>git-crypt uses <a href="https://git-scm.com/book/en/v2/Customizing-Git-Git-Attributes">.gitattributes</a> to identify the files to encrypt. It mainly uses the two operations: <code>filter</code> and <code>diff</code></p>
 <ul>
-<li><code>filter</code> is used to invoke git-crypt encrypt/decrypt while pushing/pulling the specified files</li>
+<li><code>filter</code> is used to invoke git-crypt to encrypt/decrypt while pushing/pulling the specified files</li>
 <li><code>diff</code> is used to invoke git-crypt while trying to diff the specified files</li>
 </ul>
 <p>A sample .gitattributes file is shown below.</p>
@@ -183,7 +183,7 @@ name-of-the-second-file-to-be-encrypted filter<span style="color:#f92672">=</spa
 <p>Create a .gitattributes file in your repo. Ensure that you update .gitattributes with the name of file to be encrypted. Now, update the to-be encrypted files and do <code>git add, git commit and git push</code>. If you visit your github repo on your browser, you can see your encrypted files.</p>
 <div class="alert-note alert">
   <div></div>
-<p>Providing a regex pattern instead of a file name will invoke git-crypt for all the matching files</p>
+<p>Providing a regex pattern instead of a file name will invoke git-crypt and encrypt all the matching files</p>
 </div>
 <h2 id="saving-your-encryption-settings">Saving your encryption settings</h2>
 <p>You can export your encryption key with git-crypt.</p>
