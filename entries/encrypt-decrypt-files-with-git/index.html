@@ -41,8 +41,8 @@ Installations   We will use git-crypt to encrypt/decrypt files. Read more about 
 brew install git-crypt Code Snippet 1: Install git-crypt    Install gpg
 brew install gpg Code Snippet 2: Install gpg    Setup git-crypt for your github repository Clone your repository or cd into the folder where you have already cloned your repository. Initialise git-crypt in the folder.">
 <meta itemprop="datePublished" content="2020-10-21T09:38:00+05:30" />
-<meta itemprop="dateModified" content="2020-11-11T05:57:46+05:30" />
-<meta itemprop="wordCount" content="299">
+<meta itemprop="dateModified" content="2020-11-11T06:11:17+05:30" />
+<meta itemprop="wordCount" content="311">
 <meta itemprop="image" content="https://thearjunmdas.github.io/"/>
 
 
@@ -180,10 +180,10 @@ name-of-the-second-file-to-be-encrypted filter<span style="color:#f92672">=</spa
   <span class="src-block-number">Code Snippet 4</span>:
   Sample .gitattributes file
 </div>
-<p>Create a .gitattributes file in your repo. Ensure that you update .gitattributes with the name of file to be encrypted. Now, update the to-be encrypted files and do <code>git add, git commit and git push</code>. If you visit your github repo on your browser, you can see your encrypted files.</p>
+<p>Create a .gitattributes file in your repo. Ensure that you update .gitattributes with the name of file to be encrypted. Now, update the to-be encrypted files and do <code>git add, git commit and git push</code>. Visit your github repo on your browser, to view the encrypted files. You can also use <code>git-crypt status</code> to quickly check the status of all the files.</p>
 <div class="alert-note alert">
   <div></div>
-<p>Providing a regex pattern instead of a file name will invoke git-crypt and encrypt all the matching files</p>
+<p>Providing a regex pattern instead of a file name will invoke git-crypt and encrypt all the matching files.</p>
 </div>
 <h2 id="saving-your-encryption-settings">Saving your encryption settings</h2>
 <p>You can export your encryption key with git-crypt.</p>
