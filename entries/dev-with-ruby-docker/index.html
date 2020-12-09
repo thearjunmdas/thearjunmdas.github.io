@@ -39,7 +39,7 @@ A Dockerfile for every ruby version Its best to have a separate dockerfile for e
 Installations Install docker engine from here
 A Dockerfile for every ruby version Its best to have a separate dockerfile for every ruby project and import the ruby version of your liking in the first line of the dockerfile.">
 <meta itemprop="datePublished" content="2020-12-09T11:08:00+05:30" />
-<meta itemprop="dateModified" content="2020-12-09T12:00:41+05:30" />
+<meta itemprop="dateModified" content="2020-12-09T15:39:40+05:30" />
 <meta itemprop="wordCount" content="347">
 <meta itemprop="image" content=""/>
 
@@ -197,7 +197,7 @@ docker start ruby-2.7.1
 <h2 id="whats-so-special">Whats so special?</h2>
 <p>Most of the commands mentioned here are non-trivial, the best takeaway is when you need a new ruby version, you could just duplicate the current dockerfile and change the first line of the <a href="#code-snippet--ruby-dockerfile">dockerfile</a> to the ruby version you require. Also debugging becomes very easy and <a href="https://github.com/deivid-rodriguez/byebug">byebug</a> works with no problems.</p>
 <p>On the other hand, if you would just like to run a ruby script with the docker image</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">docker run ruby-2.7.1 ruby feedback_w_numbers.rb
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">docker run ruby-2.7.1 ruby sample_script.rb
 </code></pre></div><div class="src-block-caption">
   <span class="src-block-number">Code Snippet 5</span>:
   Run your script with ruby docker image
