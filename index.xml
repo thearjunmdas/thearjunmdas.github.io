@@ -2,22 +2,33 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>ArMD</title>
-    <link>https://thearjunmdas.github.io/</link>
+    <link>/</link>
     <description>Recent content on ArMD</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Wed, 21 Oct 2020 09:38:00 +0530</lastBuildDate>
+    <lastBuildDate>Wed, 09 Dec 2020 11:08:00 +0530</lastBuildDate>
     
-	<atom:link href="https://thearjunmdas.github.io/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>Ruby version management with docker</title>
+      <link>/entries/dev-with-ruby-docker/</link>
+      <pubDate>Wed, 09 Dec 2020 11:08:00 +0530</pubDate>
+      
+      <guid>/entries/dev-with-ruby-docker/</guid>
+      <description>I have been using rvm to manage my ruby versions for a long time. With a few macOS upgrades, ruby installations via rvm has been failing for a myriad of reasons which prompted me to look for an alternative version manager. I settled on using docker images and docker as my version manager.
+Installations Install docker engine from here
+A Dockerfile for every ruby version Its best to have a separate dockerfile for every ruby project and import the ruby version of your liking in the first line of the dockerfile.</description>
+    </item>
+    
+    <item>
       <title>Encrypt and Decrypt files while using git</title>
-      <link>https://thearjunmdas.github.io/entries/encrypt-decrypt-files-with-git/</link>
+      <link>/entries/encrypt-decrypt-files-with-git/</link>
       <pubDate>Wed, 21 Oct 2020 09:38:00 +0530</pubDate>
       
-      <guid>https://thearjunmdas.github.io/entries/encrypt-decrypt-files-with-git/</guid>
+      <guid>/entries/encrypt-decrypt-files-with-git/</guid>
       <description>Quick steps to automagically encrypt/decrypt files while pushing/pulling with git.
 Installations   We will use git-crypt to encrypt/decrypt files. Read more about git-crypt here.
 brew install git-crypt Code Snippet 1: Install git-crypt    Install gpg
@@ -26,20 +37,20 @@ brew install gpg Code Snippet 2: Install gpg    Setup git-crypt for your github 
     
     <item>
       <title>Authorization header in Swagger UI</title>
-      <link>https://thearjunmdas.github.io/entries/authorization-field-in-swagger-ui/</link>
+      <link>/entries/authorization-field-in-swagger-ui/</link>
       <pubDate>Wed, 09 Sep 2020 05:51:00 +0530</pubDate>
       
-      <guid>https://thearjunmdas.github.io/entries/authorization-field-in-swagger-ui/</guid>
+      <guid>/entries/authorization-field-in-swagger-ui/</guid>
       <description>I was setting up JWT authentication for APIs of my spring boot app and wanted to test them from swagger-ui, but could not find a direct answer in my google searches. So adding my tweaks to get this done, as an entry here.
 The quickest way to get this done is to configure a global parameter in the Docket bean, which will show up on all APIs. I have added my swagger config here.</description>
     </item>
     
     <item>
       <title>Backup org files in github</title>
-      <link>https://thearjunmdas.github.io/entries/backup-org-files-in-github/</link>
+      <link>/entries/backup-org-files-in-github/</link>
       <pubDate>Thu, 20 Aug 2020 07:52:00 +0530</pubDate>
       
-      <guid>https://thearjunmdas.github.io/entries/backup-org-files-in-github/</guid>
+      <guid>/entries/backup-org-files-in-github/</guid>
       <description>tl;dr I used the following code snippets to backup my emacs org files. A quick explanation would be - The cron-job invokes backup_files_to_github.sh, once every 15 minutes, to push modified org files in the ~/org directory to a github repository. You could use this to backup any files.
 
 NOWT=$(date +&amp;#34;%Y-%m-%d %T&amp;#34;) git add . git commit -m &amp;#34;$NOWTAutomated git push&amp;#34; git push Code Snippet 1: backup_files_to_github.sh  

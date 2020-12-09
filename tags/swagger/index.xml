@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>swagger on ArMD</title>
-    <link>https://thearjunmdas.github.io/tags/swagger/</link>
+    <link>/tags/swagger/</link>
     <description>Recent content in swagger on ArMD</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
     <lastBuildDate>Wed, 09 Sep 2020 05:51:00 +0530</lastBuildDate>
     
-	<atom:link href="https://thearjunmdas.github.io/tags/swagger/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/swagger/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Authorization header in Swagger UI</title>
-      <link>https://thearjunmdas.github.io/entries/authorization-field-in-swagger-ui/</link>
+      <link>/entries/authorization-field-in-swagger-ui/</link>
       <pubDate>Wed, 09 Sep 2020 05:51:00 +0530</pubDate>
       
-      <guid>https://thearjunmdas.github.io/entries/authorization-field-in-swagger-ui/</guid>
+      <guid>/entries/authorization-field-in-swagger-ui/</guid>
       <description>I was setting up JWT authentication for APIs of my spring boot app and wanted to test them from swagger-ui, but could not find a direct answer in my google searches. So adding my tweaks to get this done, as an entry here.
 The quickest way to get this done is to configure a global parameter in the Docket bean, which will show up on all APIs. I have added my swagger config here.</description>
     </item>

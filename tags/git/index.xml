@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>git on ArMD</title>
-    <link>https://thearjunmdas.github.io/tags/git/</link>
+    <link>/tags/git/</link>
     <description>Recent content in git on ArMD</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
     <lastBuildDate>Wed, 21 Oct 2020 09:38:00 +0530</lastBuildDate>
     
-	<atom:link href="https://thearjunmdas.github.io/tags/git/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/git/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Encrypt and Decrypt files while using git</title>
-      <link>https://thearjunmdas.github.io/entries/encrypt-decrypt-files-with-git/</link>
+      <link>/entries/encrypt-decrypt-files-with-git/</link>
       <pubDate>Wed, 21 Oct 2020 09:38:00 +0530</pubDate>
       
-      <guid>https://thearjunmdas.github.io/entries/encrypt-decrypt-files-with-git/</guid>
+      <guid>/entries/encrypt-decrypt-files-with-git/</guid>
       <description>Quick steps to automagically encrypt/decrypt files while pushing/pulling with git.
 Installations   We will use git-crypt to encrypt/decrypt files. Read more about git-crypt here.
 brew install git-crypt Code Snippet 1: Install git-crypt    Install gpg

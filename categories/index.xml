@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on ArMD</title>
-    <link>https://thearjunmdas.github.io/categories/</link>
+    <link>/categories/</link>
     <description>Recent content in Categories on ArMD</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Wed, 21 Oct 2020 09:38:00 +0530</lastBuildDate>
+    <lastBuildDate>Wed, 09 Dec 2020 11:08:00 +0530</lastBuildDate>
     
-	<atom:link href="https://thearjunmdas.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>developer</title>
-      <link>https://thearjunmdas.github.io/categories/developer/</link>
-      <pubDate>Wed, 21 Oct 2020 09:38:00 +0530</pubDate>
+      <link>/categories/developer/</link>
+      <pubDate>Wed, 09 Dec 2020 11:08:00 +0530</pubDate>
       
-      <guid>https://thearjunmdas.github.io/categories/developer/</guid>
+      <guid>/categories/developer/</guid>
       <description></description>
     </item>
     

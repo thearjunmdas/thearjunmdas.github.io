@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="[Arjun Das]">
+<meta name="description" content="I have been using rvm to manage my ruby versions for a long time. With a few macOS upgrades, ruby installations via rvm has been failing for a myriad of reasons which prompted me to look for an alternative version manager. I settled on using docker images and docker as my version manager.
+Installations Install docker engine from here
+A Dockerfile for every ruby version Its best to have a separate dockerfile for every ruby project and import the ruby version of your liking in the first line of the dockerfile." />
+<meta name="keywords" content=", ruby, docker" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="" />
+<link rel="canonical" href="/entries/dev-with-ruby-docker/" />
+
+
+    <title>
+        
+            Ruby version management with docker :: ArMD  — Architect Manager Devloper
+        
+    </title>
+
+
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.2.1/css/flag-icon.min.css" rel="stylesheet"
+    type="text/css">
+
+
+
+<link rel="stylesheet" href="/main.19311ff789e7e29470d0ed5d5496a2b9ba8ade498bd0d2823729087db6171dea.css">
+
+
+
+
+
+
+<meta itemprop="name" content="Ruby version management with docker">
+<meta itemprop="description" content="I have been using rvm to manage my ruby versions for a long time. With a few macOS upgrades, ruby installations via rvm has been failing for a myriad of reasons which prompted me to look for an alternative version manager. I settled on using docker images and docker as my version manager.
+Installations Install docker engine from here
+A Dockerfile for every ruby version Its best to have a separate dockerfile for every ruby project and import the ruby version of your liking in the first line of the dockerfile.">
+<meta itemprop="datePublished" content="2020-12-09T11:08:00+05:30" />
+<meta itemprop="dateModified" content="2020-12-09T12:00:41+05:30" />
+<meta itemprop="wordCount" content="347">
+<meta itemprop="image" content=""/>
+
+
+
+<meta itemprop="keywords" content="ruby,docker," />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content=""/>
+
+<meta name="twitter:title" content="Ruby version management with docker"/>
+<meta name="twitter:description" content="I have been using rvm to manage my ruby versions for a long time. With a few macOS upgrades, ruby installations via rvm has been failing for a myriad of reasons which prompted me to look for an alternative version manager. I settled on using docker images and docker as my version manager.
+Installations Install docker engine from here
+A Dockerfile for every ruby version Its best to have a separate dockerfile for every ruby project and import the ruby version of your liking in the first line of the dockerfile."/>
+
+
+
+
+
+    <meta property="article:section" content="developer" />
+
+
+
+    <meta property="article:published_time" content="2020-12-09 11:08:00 &#43;0530 IST" />
+
+
+
+
+
+
+
+
+    </head>
+
+    <body class="">
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text">ArMD Diaries</span>
+            <span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="/entries/">Entries</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+
+            <span class="theme-toggle unselectable"><svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
+</svg>
+</span>
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+    <main class="post">
+
+        <div class="post-info">
+            
+            </p>
+        </div>
+
+        <article>
+            <h2 class="post-title"><a href="/entries/dev-with-ruby-docker/">Ruby version management with docker</a></h2>
+
+            
+
+            <div class="post-content">
+                <p>I have been using <a href="https://rvm.io/">rvm</a> to manage my ruby versions for a long time. With a few macOS upgrades, ruby installations via rvm has been failing for a myriad of reasons which prompted me to look for an alternative version manager. I settled on using docker images and docker as my version manager.</p>
+<h2 id="installations">Installations</h2>
+<p>Install docker engine from <a href="https://docs.docker.com/engine/install">here</a></p>
+<h2 id="a-dockerfile-for-every-ruby-version">A Dockerfile for every ruby version</h2>
+<p>Its best to have a separate dockerfile for every ruby project and import the ruby version of your liking in the first line of the dockerfile.</p>
+<p><a id="code-snippet--ruby-dockerfile"></a></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dockerfile" data-lang="dockerfile"><span style="color:#75715e"># Import your ruby version</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">FROM</span><span style="color:#e6db74"> ruby:2.7.1</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#75715e"># Install bundler gem</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">RUN</span> gem install bundler<span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#75715e"># Assign a work directory</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">WORKDIR</span><span style="color:#e6db74"> /work</span><span style="color:#960050;background-color:#1e0010">
+</span></code></pre></div><div class="src-block-caption">
+  <span class="src-block-number"><a href="#code-snippet--ruby-dockerfile">Code Snippet 1</a></span>:
+  dockerfile for ruby version 2.7.1
+</div>
+<h2 id="run-your-script-from-docker">Run your script from docker</h2>
+<ol>
+<li>
+<p>Copy the <a href="#code-snippet--ruby-dockerfile">dockerfile</a> to the folder where you have your ruby code.</p>
+</li>
+<li>
+<p>Build your ruby docker image</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">docker build -t ruby-2.7.1 .
+</code></pre></div><div class="src-block-caption">
+  <span class="src-block-number">Code Snippet 2</span>:
+  Build Docker
+</div>
+<p>I use the respective ruby version as the tag of the docker image. Here it is <code>ruby-2.7.1</code></p>
+</li>
+<li>
+<p>Start the docker image</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">docker start ruby-2.7.1
+</code></pre></div><div class="src-block-caption">
+  <span class="src-block-number">Code Snippet 3</span>:
+  Start the docker image
+</div>
+</li>
+<li>
+<p>Access the running docker container&rsquo;s shell using exec and run bundle install if you have a gemfile for your project</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">docker exec -it ruby-2.7.1 /bin/bash
+cd your_work_directory
+bundle install
+</code></pre></div><div class="src-block-caption">
+  <span class="src-block-number">Code Snippet 4</span>:
+  bundle install is optional
+</div>
+</li>
+<li>
+<p>Run your ruby script</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">ruby script.rb
+</code></pre></div></li>
+<li>
+<p>Exit the docker container and stop the container once you are done with development</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#75715e"># Press ctl+c to exit from the container</span>
+docker stop ruby-2.7.1
+<span style="color:#75715e"># To start development, just start the container again and follow the above steps</span>
+docker start ruby-2.7.1
+</code></pre></div></li>
+</ol>
+<h2 id="whats-so-special">Whats so special?</h2>
+<p>Most of the commands mentioned here are non-trivial, the best takeaway is when you need a new ruby version, you could just duplicate the current dockerfile and change the first line of the <a href="#code-snippet--ruby-dockerfile">dockerfile</a> to the ruby version you require. Also debugging becomes very easy and <a href="https://github.com/deivid-rodriguez/byebug">byebug</a> works with no problems.</p>
+<p>On the other hand, if you would just like to run a ruby script with the docker image</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">docker run ruby-2.7.1 ruby feedback_w_numbers.rb
+</code></pre></div><div class="src-block-caption">
+  <span class="src-block-number">Code Snippet 5</span>:
+  Run your script with ruby docker image
+</div>
+            </div>
+        </article>
+
+        <hr />
+
+        <div class="post-info">
+  				<p>
+  					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg><span class="tag"><a href="tags/ruby">ruby</a></span><span class="tag"><a href="tags/docker">docker</a></span>
+  				</p>
+  		</div>
+    </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>&copy; 2020</span>
+            
+            
+                <span><a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a></span>
+            
+            <span> <a href="entries/index.xml" target="_blank" title="rss"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a></span>
+        </div>
+    </div>
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span><a href="https://github.com/thearjunmdas"> <b>Ar</b>jun <b>M</b> <b>D</b>as</a></span>
+        </div>
+    </div>
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+
+<script type="text/javascript" src="/bundle.min.dc716e9092c9820b77f96da294d0120aeeb189b5bcea9752309ebea27fd53bbe6b13cffb2aca8ecf32525647ceb7001f76091de4199ac5a3caa432c070247f5b.js" integrity="sha512-3HFukJLJggt3&#43;W2ilNASCu6xibW86pdSMJ6&#43;on/VO75rE8/7KsqOzzJSVkfOtwAfdgkd5BmaxaPKpDLAcCR/Ww=="></script>
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-175966654-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+
+
+
+    </body>
+</html>
