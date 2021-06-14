@@ -2,99 +2,99 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on ArMD</title>
-    <link>/tags/</link>
+    <link>https://thearjunmdas.github.io/tags/</link>
     <description>Recent content in Tags on ArMD</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Wed, 09 Dec 2020 11:08:00 +0530</lastBuildDate><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 09 Dec 2020 11:08:00 +0530</lastBuildDate><atom:link href="https://thearjunmdas.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>docker</title>
-      <link>/tags/docker/</link>
+      <link>https://thearjunmdas.github.io/tags/docker/</link>
       <pubDate>Wed, 09 Dec 2020 11:08:00 +0530</pubDate>
       
-      <guid>/tags/docker/</guid>
+      <guid>https://thearjunmdas.github.io/tags/docker/</guid>
       <description></description>
     </item>
     
     <item>
       <title>ruby</title>
-      <link>/tags/ruby/</link>
+      <link>https://thearjunmdas.github.io/tags/ruby/</link>
       <pubDate>Wed, 09 Dec 2020 11:08:00 +0530</pubDate>
       
-      <guid>/tags/ruby/</guid>
+      <guid>https://thearjunmdas.github.io/tags/ruby/</guid>
       <description></description>
     </item>
     
     <item>
       <title>git</title>
-      <link>/tags/git/</link>
+      <link>https://thearjunmdas.github.io/tags/git/</link>
       <pubDate>Wed, 21 Oct 2020 09:38:00 +0530</pubDate>
       
-      <guid>/tags/git/</guid>
+      <guid>https://thearjunmdas.github.io/tags/git/</guid>
       <description></description>
     </item>
     
     <item>
       <title>authorization</title>
-      <link>/tags/authorization/</link>
+      <link>https://thearjunmdas.github.io/tags/authorization/</link>
       <pubDate>Wed, 09 Sep 2020 05:51:00 +0530</pubDate>
       
-      <guid>/tags/authorization/</guid>
+      <guid>https://thearjunmdas.github.io/tags/authorization/</guid>
       <description></description>
     </item>
     
     <item>
       <title>springboot</title>
-      <link>/tags/springboot/</link>
+      <link>https://thearjunmdas.github.io/tags/springboot/</link>
       <pubDate>Wed, 09 Sep 2020 05:51:00 +0530</pubDate>
       
-      <guid>/tags/springboot/</guid>
+      <guid>https://thearjunmdas.github.io/tags/springboot/</guid>
       <description></description>
     </item>
     
     <item>
       <title>swagger</title>
-      <link>/tags/swagger/</link>
+      <link>https://thearjunmdas.github.io/tags/swagger/</link>
       <pubDate>Wed, 09 Sep 2020 05:51:00 +0530</pubDate>
       
-      <guid>/tags/swagger/</guid>
+      <guid>https://thearjunmdas.github.io/tags/swagger/</guid>
       <description></description>
     </item>
     
     <item>
       <title>cron</title>
-      <link>/tags/cron/</link>
+      <link>https://thearjunmdas.github.io/tags/cron/</link>
       <pubDate>Thu, 20 Aug 2020 07:52:00 +0530</pubDate>
       
-      <guid>/tags/cron/</guid>
+      <guid>https://thearjunmdas.github.io/tags/cron/</guid>
       <description></description>
     </item>
     
     <item>
       <title>emacs</title>
-      <link>/tags/emacs/</link>
+      <link>https://thearjunmdas.github.io/tags/emacs/</link>
       <pubDate>Thu, 20 Aug 2020 07:52:00 +0530</pubDate>
       
-      <guid>/tags/emacs/</guid>
+      <guid>https://thearjunmdas.github.io/tags/emacs/</guid>
       <description></description>
     </item>
     
     <item>
       <title>github</title>
-      <link>/tags/github/</link>
+      <link>https://thearjunmdas.github.io/tags/github/</link>
       <pubDate>Thu, 20 Aug 2020 07:52:00 +0530</pubDate>
       
-      <guid>/tags/github/</guid>
+      <guid>https://thearjunmdas.github.io/tags/github/</guid>
       <description></description>
     </item>
     
     <item>
       <title>logrotate</title>
-      <link>/tags/logrotate/</link>
+      <link>https://thearjunmdas.github.io/tags/logrotate/</link>
       <pubDate>Thu, 20 Aug 2020 07:52:00 +0530</pubDate>
       
-      <guid>/tags/logrotate/</guid>
+      <guid>https://thearjunmdas.github.io/tags/logrotate/</guid>
       <description></description>
     </item>
     
