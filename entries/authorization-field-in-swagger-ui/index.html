@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="author" content="[Arjun Das]">
+<meta name="author" content="[Arjun M Das]">
 <meta name="description" content="I was setting up JWT authentication for APIs of my spring boot app and wanted to test them from swagger-ui, but could not find a direct answer in my google searches. So adding my tweaks to get this done, as an entry here.
 The quickest way to get this done is to configure a global parameter in the Docket bean, which will show up on all APIs. I have added my swagger config here." />
 <meta name="keywords" content=", authorization, swagger, springboot" />
@@ -35,16 +35,10 @@ The quickest way to get this done is to configure a global parameter in the Dock
 
 <meta itemprop="name" content="Authorization header in Swagger UI">
 <meta itemprop="description" content="I was setting up JWT authentication for APIs of my spring boot app and wanted to test them from swagger-ui, but could not find a direct answer in my google searches. So adding my tweaks to get this done, as an entry here.
-The quickest way to get this done is to configure a global parameter in the Docket bean, which will show up on all APIs. I have added my swagger config here.">
-<meta itemprop="datePublished" content="2020-09-09T05:51:00+05:30" />
-<meta itemprop="dateModified" content="2020-09-23T05:44:51+05:30" />
-<meta itemprop="wordCount" content="198">
-<meta itemprop="image" content=""/>
-
-
-
+The quickest way to get this done is to configure a global parameter in the Docket bean, which will show up on all APIs. I have added my swagger config here."><meta itemprop="datePublished" content="2020-09-09T05:51:00&#43;05:30" />
+<meta itemprop="dateModified" content="2021-06-13T23:02:31&#43;05:30" />
+<meta itemprop="wordCount" content="198"><meta itemprop="image" content=""/>
 <meta itemprop="keywords" content="authorization,swagger,springboot," />
-
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content=""/>
 
@@ -163,17 +157,15 @@ The quickest way to get this done is to configure a global parameter in the Dock
   swagger-configuration-for-auth-header
 </div>
 <p>With the above changes, you should be good to go and your swagger-ui should display the authorization header as shown in Figure 1.</p>
-<figure>
-    <img src="/ox-hugo/authorization-header.png"
-         alt="Figure 1: Authorization header in swagger"/> <figcaption>
+<figure><img src="/ox-hugo/authorization-header.png"
+         alt="Figure 1: Authorization header in swagger"/><figcaption>
             <p>Figure 1: Authorization header in swagger</p>
         </figcaption>
 </figure>
 
 <p>If your authentication mechanism expects the string <code>bearer</code>, the simplest solution is to pre-pend the api token with <strong>Bearer</strong> while entering the authorization header, i.e., <strong>Bearer xyzApiTokenabcsd</strong>.</p>
-<figure>
-    <img src="/ox-hugo/authorization-header-w-value.png"
-         alt="Figure 2: Prepending Bearer"/> <figcaption>
+<figure><img src="/ox-hugo/authorization-header-w-value.png"
+         alt="Figure 2: Prepending Bearer"/><figcaption>
             <p>Figure 2: Prepending Bearer</p>
         </figcaption>
 </figure>
@@ -220,7 +212,7 @@ The quickest way to get this done is to configure a global parameter in the Dock
 
 
 
-<script type="text/javascript" src="/bundle.min.dc716e9092c9820b77f96da294d0120aeeb189b5bcea9752309ebea27fd53bbe6b13cffb2aca8ecf32525647ceb7001f76091de4199ac5a3caa432c070247f5b.js" integrity="sha512-3HFukJLJggt3&#43;W2ilNASCu6xibW86pdSMJ6&#43;on/VO75rE8/7KsqOzzJSVkfOtwAfdgkd5BmaxaPKpDLAcCR/Ww=="></script>
+<script type="text/javascript" src="/bundle.min.a0f363fdf81cdc5cfacc447a79c33189eb000d090336cd04aac8ee256f423b3133b836c281944c19c75e38d0b0b449f01ce5807e37798b7ac94ac1db51983fc4.js" integrity="sha512-oPNj/fgc3Fz6zER6ecMxiesADQkDNs0EqsjuJW9COzEzuDbCgZRMGcdeONCwtEnwHOWAfjd5i3rJSsHbUZg/xA=="></script>
     
 <script type="application/javascript">
 var doNotTrack = false;
@@ -234,7 +226,6 @@ if (!doNotTrack) {
 	ga('send', 'pageview');
 }
 </script>
-
 
 
 

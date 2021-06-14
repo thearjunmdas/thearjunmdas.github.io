@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="author" content="[Arjun Das]">
+<meta name="author" content="[Arjun M Das]">
 <meta name="description" content="tl;dr I used the following code snippets to backup my emacs org files. A quick explanation would be - The cron-job invokes backup_files_to_github.sh, once every 15 minutes, to push modified org files in the ~/org directory to a github repository. You could use this to backup any files.
 
 NOWT=$(date &#43;&amp;#34;%Y-%m-%d %T&amp;#34;) git add . git commit -m &amp;#34;$NOWTAutomated git push&amp;#34; git push Code Snippet 1: backup_files_to_github.sh  
@@ -39,16 +39,10 @@ NOWT=$(date &#43;&amp;#34;%Y-%m-%d %T&amp;#34;) git add . git commit -m &amp;#34
 <meta itemprop="description" content="tl;dr I used the following code snippets to backup my emacs org files. A quick explanation would be - The cron-job invokes backup_files_to_github.sh, once every 15 minutes, to push modified org files in the ~/org directory to a github repository. You could use this to backup any files.
 
 NOWT=$(date &#43;&#34;%Y-%m-%d %T&#34;) git add . git commit -m &#34;$NOWTAutomated git push&#34; git push Code Snippet 1: backup_files_to_github.sh  
-*/15 * * * * cd ~/org &amp;&amp; .">
-<meta itemprop="datePublished" content="2020-08-20T07:52:00+05:30" />
-<meta itemprop="dateModified" content="2020-12-17T19:14:52+05:30" />
-<meta itemprop="wordCount" content="579">
-<meta itemprop="image" content=""/>
-
-
-
+*/15 * * * * cd ~/org &amp;&amp; ."><meta itemprop="datePublished" content="2020-08-20T07:52:00&#43;05:30" />
+<meta itemprop="dateModified" content="2021-06-13T23:02:31&#43;05:30" />
+<meta itemprop="wordCount" content="579"><meta itemprop="image" content=""/>
 <meta itemprop="keywords" content="emacs,github,cron,logrotate,git," />
-
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content=""/>
 
@@ -328,7 +322,7 @@ brew link logrotate
 
 
 
-<script type="text/javascript" src="/bundle.min.dc716e9092c9820b77f96da294d0120aeeb189b5bcea9752309ebea27fd53bbe6b13cffb2aca8ecf32525647ceb7001f76091de4199ac5a3caa432c070247f5b.js" integrity="sha512-3HFukJLJggt3&#43;W2ilNASCu6xibW86pdSMJ6&#43;on/VO75rE8/7KsqOzzJSVkfOtwAfdgkd5BmaxaPKpDLAcCR/Ww=="></script>
+<script type="text/javascript" src="/bundle.min.a0f363fdf81cdc5cfacc447a79c33189eb000d090336cd04aac8ee256f423b3133b836c281944c19c75e38d0b0b449f01ce5807e37798b7ac94ac1db51983fc4.js" integrity="sha512-oPNj/fgc3Fz6zER6ecMxiesADQkDNs0EqsjuJW9COzEzuDbCgZRMGcdeONCwtEnwHOWAfjd5i3rJSsHbUZg/xA=="></script>
     
 <script type="application/javascript">
 var doNotTrack = false;
@@ -342,7 +336,6 @@ if (!doNotTrack) {
 	ga('send', 'pageview');
 }
 </script>
-
 
 
 

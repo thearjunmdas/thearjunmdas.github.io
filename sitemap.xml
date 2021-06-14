@@ -1,100 +1,62 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-
   <url>
     <loc>https://thearjunmdas.github.io/</loc>
-    <lastmod>2021-01-02T20:50:34+05:30</lastmod>
-  </url>
-
-  <url>
+    <lastmod>2021-06-13T23:02:32+05:30</lastmod>
+  </url><url>
+    <loc>https://thearjunmdas.github.io/entries/</loc>
+    <lastmod>2021-06-13T23:02:32+05:30</lastmod>
+  </url><url>
     <loc>https://thearjunmdas.github.io/categories/</loc>
-    <lastmod>2021-01-02T20:50:34+05:30</lastmod>
-  </url>
-
-  <url>
+    <lastmod>2021-06-13T23:02:32+05:30</lastmod>
+  </url><url>
     <loc>https://thearjunmdas.github.io/categories/developer/</loc>
-    <lastmod>2021-01-02T20:50:34+05:30</lastmod>
-  </url>
-
-  <url>
+    <lastmod>2021-06-13T23:02:32+05:30</lastmod>
+  </url><url>
     <loc>https://thearjunmdas.github.io/tags/docker/</loc>
-    <lastmod>2021-01-02T20:50:34+05:30</lastmod>
-  </url>
-
-  <url>
+    <lastmod>2021-06-13T23:02:32+05:30</lastmod>
+  </url><url>
     <loc>https://thearjunmdas.github.io/tags/ruby/</loc>
-    <lastmod>2021-01-02T20:50:34+05:30</lastmod>
-  </url>
-
-  <url>
+    <lastmod>2021-06-13T23:02:32+05:30</lastmod>
+  </url><url>
     <loc>https://thearjunmdas.github.io/entries/dev-with-ruby-docker/</loc>
-    <lastmod>2021-01-02T20:50:34+05:30</lastmod>
-  </url>
-
-  <url>
+    <lastmod>2021-06-13T23:02:32+05:30</lastmod>
+  </url><url>
     <loc>https://thearjunmdas.github.io/tags/</loc>
-    <lastmod>2021-01-02T20:50:34+05:30</lastmod>
-  </url>
-
-  <url>
+    <lastmod>2021-06-13T23:02:32+05:30</lastmod>
+  </url><url>
     <loc>https://thearjunmdas.github.io/entries/encrypt-decrypt-files-with-git/</loc>
-    <lastmod>2020-12-15T08:51:08+05:30</lastmod>
-  </url>
-
-  <url>
+    <lastmod>2021-06-13T23:02:32+05:30</lastmod>
+  </url><url>
     <loc>https://thearjunmdas.github.io/tags/git/</loc>
-    <lastmod>2020-12-15T08:51:08+05:30</lastmod>
-  </url>
-
-  <url>
+    <lastmod>2021-06-13T23:02:32+05:30</lastmod>
+  </url><url>
     <loc>https://thearjunmdas.github.io/tags/authorization/</loc>
     <lastmod>2020-09-23T05:44:51+05:30</lastmod>
-  </url>
-
-  <url>
+  </url><url>
     <loc>https://thearjunmdas.github.io/entries/authorization-field-in-swagger-ui/</loc>
-    <lastmod>2020-09-23T05:44:51+05:30</lastmod>
-  </url>
-
-  <url>
+    <lastmod>2021-06-13T23:02:32+05:30</lastmod>
+  </url><url>
     <loc>https://thearjunmdas.github.io/tags/springboot/</loc>
-    <lastmod>2020-09-23T05:44:51+05:30</lastmod>
-  </url>
-
-  <url>
+    <lastmod>2021-06-13T23:02:32+05:30</lastmod>
+  </url><url>
     <loc>https://thearjunmdas.github.io/tags/swagger/</loc>
-    <lastmod>2020-09-23T05:44:51+05:30</lastmod>
-  </url>
-
-  <url>
-    <loc>https://thearjunmdas.github.io/entries/</loc>
-    <lastmod>2020-08-21T15:33:01+05:30</lastmod>
-  </url>
-
-  <url>
+    <lastmod>2021-06-13T23:02:32+05:30</lastmod>
+  </url><url>
     <loc>https://thearjunmdas.github.io/entries/backup-org-files-in-github/</loc>
-    <lastmod>2020-10-07T06:44:52+05:30</lastmod>
-  </url>
-
-  <url>
+    <lastmod>2021-06-13T23:02:32+05:30</lastmod>
+  </url><url>
     <loc>https://thearjunmdas.github.io/tags/cron/</loc>
-    <lastmod>2020-10-07T06:44:52+05:30</lastmod>
-  </url>
-
-  <url>
+    <lastmod>2021-06-13T23:02:32+05:30</lastmod>
+  </url><url>
     <loc>https://thearjunmdas.github.io/tags/emacs/</loc>
-    <lastmod>2020-10-07T06:44:52+05:30</lastmod>
-  </url>
-
-  <url>
+    <lastmod>2021-06-13T23:02:32+05:30</lastmod>
+  </url><url>
     <loc>https://thearjunmdas.github.io/tags/github/</loc>
-    <lastmod>2020-10-07T06:44:52+05:30</lastmod>
-  </url>
-
-  <url>
+    <lastmod>2021-06-13T23:02:32+05:30</lastmod>
+  </url><url>
     <loc>https://thearjunmdas.github.io/tags/logrotate/</loc>
-    <lastmod>2020-10-07T06:44:52+05:30</lastmod>
+    <lastmod>2021-06-13T23:02:32+05:30</lastmod>
   </url>
-
 </urlset>
