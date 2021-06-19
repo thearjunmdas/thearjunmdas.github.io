@@ -7,7 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Mon, 14 Jun 2021 08:16:55 +0530</lastBuildDate><atom:link href="https://thearjunmdas.github.io/entries/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 14 Jun 2021 08:36:16 +0530</lastBuildDate><atom:link href="https://thearjunmdas.github.io/entries/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to be a dragon rider?</title>
+      <link>https://thearjunmdas.github.io/entries/how-to-be-a-dragon-rider/</link>
+      <pubDate>Sat, 19 Jun 2021 07:45:00 +0530</pubDate>
+      
+      <guid>https://thearjunmdas.github.io/entries/how-to-be-a-dragon-rider/</guid>
+      <description>Dragons may be fictional but dragonriders are real in the world of dragonruby.
+ DragonRuby is a zero dependency, cross platform, Ruby runtime built on top of mRuby, libSDL, and LLVM and DragonRuby Game Toolkit, gtk, is a professional grade 2D game engine.
+ I was drawn into the dragonriders&#39; lair by the dragonruby-classics-jam-gauntlet-edition, which led me to build a game under 2 weekends of ruby programming in gtk.
+ Figure 1: My first 2D game</description>
+    </item>
+    
     <item>
       <title>Ruby version management with docker</title>
       <link>https://thearjunmdas.github.io/entries/dev-with-ruby-docker/</link>
