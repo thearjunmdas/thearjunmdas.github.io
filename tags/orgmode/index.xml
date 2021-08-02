@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>emacs on ArMD</title>
-    <link>https://thearjunmdas.github.io/tags/emacs/</link>
-    <description>Recent content in emacs on ArMD</description>
+    <title>orgmode on ArMD</title>
+    <link>https://thearjunmdas.github.io/tags/orgmode/</link>
+    <description>Recent content in orgmode on ArMD</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Mon, 02 Aug 2021 07:21:00 +0530</lastBuildDate><atom:link href="https://thearjunmdas.github.io/tags/emacs/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 02 Aug 2021 07:21:00 +0530</lastBuildDate><atom:link href="https://thearjunmdas.github.io/tags/orgmode/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Tables in emacs org-mode</title>
       <link>https://thearjunmdas.github.io/entries/tables-in-emacs-org-mode/</link>
@@ -18,18 +18,6 @@
  org-mode must be enabled in your buffer to move ahead
  Setting up a Table A table can be created in any of the following ways
  Start typing with | followed by a column name and another |, press TAB. org-mode will auto-detect this to be a table C-c | will create a templated table with number of columns of your choice  Creating a new row Just go to the last column, press tab before the last |</description>
-    </item>
-    
-    <item>
-      <title>Backup org files in github</title>
-      <link>https://thearjunmdas.github.io/entries/backup-org-files-in-github/</link>
-      <pubDate>Thu, 20 Aug 2020 07:52:00 +0530</pubDate>
-      
-      <guid>https://thearjunmdas.github.io/entries/backup-org-files-in-github/</guid>
-      <description>tl;dr I used the following code snippets to backup my emacs org files. A quick explanation would be - The cron-job invokes backup_files_to_github.sh, once every 15 minutes, to push modified org files in the ~/org directory to a github repository. You could use this to backup any files.
-
-NOWT=$(date +&amp;#34;%Y-%m-%d %T&amp;#34;) git add . git commit -m &amp;#34;$NOWTAutomated git push&amp;#34; git push Code Snippet 1: backup_files_to_github.sh  
-*/15 * * * * cd ~/org &amp;amp;&amp;amp; .</description>
     </item>
     
   </channel>

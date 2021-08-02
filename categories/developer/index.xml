@@ -7,7 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Sat, 19 Jun 2021 07:45:00 +0530</lastBuildDate><atom:link href="https://thearjunmdas.github.io/categories/developer/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 02 Aug 2021 07:21:00 +0530</lastBuildDate><atom:link href="https://thearjunmdas.github.io/categories/developer/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tables in emacs org-mode</title>
+      <link>https://thearjunmdas.github.io/entries/tables-in-emacs-org-mode/</link>
+      <pubDate>Mon, 02 Aug 2021 07:21:00 +0530</pubDate>
+      
+      <guid>https://thearjunmdas.github.io/entries/tables-in-emacs-org-mode/</guid>
+      <description>Emacs has native support for tables but org mode makes using tables a breeze. This will be a quick primer for org-mode tables.
+ org-mode must be enabled in your buffer to move ahead
+ Setting up a Table A table can be created in any of the following ways
+ Start typing with | followed by a column name and another |, press TAB. org-mode will auto-detect this to be a table C-c | will create a templated table with number of columns of your choice  Creating a new row Just go to the last column, press tab before the last |</description>
+    </item>
+    
     <item>
       <title>How to be a dragon rider?</title>
       <link>https://thearjunmdas.github.io/entries/how-to-be-a-dragon-rider/</link>
