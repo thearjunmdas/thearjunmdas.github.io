@@ -15,9 +15,9 @@
       
       <guid>https://thearjunmdas.github.io/entries/tables-in-emacs-org-mode/</guid>
       <description>Emacs has native support for tables but org mode makes using tables a breeze. This will be a quick primer for org-mode tables.
- org-mode must be enabled in your buffer to move ahead
+ org-mode must be enabled in your buffer for the remainder of the post. Tables can be accessed without org-mode but have a few more extra steps.
  Setting up a Table A table can be created in any of the following ways
- Start typing with | followed by a column name and another |, press TAB. org-mode will auto-detect this to be a table C-c | will create a templated table with number of columns of your choice  Creating a new row Just go to the last column, press tab before the last |</description>
+ Start typing with | followed by a column name and another |, press TAB.</description>
     </item>
     
   </channel>
