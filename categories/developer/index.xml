@@ -7,7 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Mon, 02 Aug 2021 07:21:00 +0530</lastBuildDate><atom:link href="https://thearjunmdas.github.io/categories/developer/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 30 Aug 2021 07:08:00 +0530</lastBuildDate><atom:link href="https://thearjunmdas.github.io/categories/developer/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Plot graphs in emacs org-mode</title>
+      <link>https://thearjunmdas.github.io/entries/plot-graphs-in-emacs-org-mode/</link>
+      <pubDate>Mon, 30 Aug 2021 07:08:00 +0530</pubDate>
+      
+      <guid>https://thearjunmdas.github.io/entries/plot-graphs-in-emacs-org-mode/</guid>
+      <description>I use Emacs as the IDE for most of my projects, one of which required plotting a graph to debug an issue. I have summarised the steps I followed to generate a graph using Emacs, with a mac.
+Prerequisites   Download and install Xcode from App Store
+  Install command line tools
+xcode-select install   Install gnuplot - the graphs will be powered by gnuplot
+sudo port install gnuplot +qt5 + x11 +aquaterm +wxwidgets Refer this setup guide for more details</description>
+    </item>
+    
     <item>
       <title>Tables in emacs org-mode</title>
       <link>https://thearjunmdas.github.io/entries/tables-in-emacs-org-mode/</link>
