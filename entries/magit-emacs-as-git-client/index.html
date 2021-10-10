@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="[Arjun M Das]">
+<meta name="description" content="Git commandline had been my go-to way of using git for a long time, till I came across the world of emacs and magit. In this entry, we will set up vanilla emacs with magit.
+Prerequisites  A cloned git repo in your local machine Download vanilla emacs for macos from https://emacsformacosx.com and for other OSes from here.  Magit installation   If you are a first time emacs user, create a ." />
+<meta name="keywords" content=", emacs" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="" />
+<link rel="canonical" href="https://thearjunmdas.github.io/entries/magit-emacs-as-git-client/" />
+
+
+    <title>
+        
+            Magit (Emacs) as git client :: ArMD  — Architect Manager Devloper
+        
+    </title>
+
+
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.2.1/css/flag-icon.min.css" rel="stylesheet"
+    type="text/css">
+
+
+
+<link rel="stylesheet" href="/main.19311ff789e7e29470d0ed5d5496a2b9ba8ade498bd0d2823729087db6171dea.css">
+
+
+
+
+
+
+<meta itemprop="name" content="Magit (Emacs) as git client">
+<meta itemprop="description" content="Git commandline had been my go-to way of using git for a long time, till I came across the world of emacs and magit. In this entry, we will set up vanilla emacs with magit.
+Prerequisites  A cloned git repo in your local machine Download vanilla emacs for macos from https://emacsformacosx.com and for other OSes from here.  Magit installation   If you are a first time emacs user, create a ."><meta itemprop="datePublished" content="2021-10-09T21:33:00&#43;05:30" />
+<meta itemprop="dateModified" content="2021-10-10T08:59:27&#43;05:30" />
+<meta itemprop="wordCount" content="546"><meta itemprop="image" content="https://thearjunmdas.github.io/"/>
+<meta itemprop="keywords" content="emacs," />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://thearjunmdas.github.io/"/>
+
+<meta name="twitter:title" content="Magit (Emacs) as git client"/>
+<meta name="twitter:description" content="Git commandline had been my go-to way of using git for a long time, till I came across the world of emacs and magit. In this entry, we will set up vanilla emacs with magit.
+Prerequisites  A cloned git repo in your local machine Download vanilla emacs for macos from https://emacsformacosx.com and for other OSes from here.  Magit installation   If you are a first time emacs user, create a ."/>
+
+
+
+
+
+    <meta property="article:section" content="developer" />
+
+
+
+    <meta property="article:published_time" content="2021-10-09 21:33:00 &#43;0530 IST" />
+
+
+
+
+
+
+
+
+    </head>
+
+    <body class="">
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text">ArMD Diaries</span>
+            <span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="https://thearjunmdas.github.io/entries/">Entries</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+
+            <span class="theme-toggle unselectable"><svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
+</svg>
+</span>
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+    <main class="post">
+
+        <div class="post-info">
+            
+            </p>
+        </div>
+
+        <article>
+            <h2 class="post-title"><a href="https://thearjunmdas.github.io/entries/magit-emacs-as-git-client/">Magit (Emacs) as git client</a></h2>
+
+            
+
+            <div class="post-content">
+                <p>Git <a href="https://git-scm.com/book/en/v2/Getting-Started-The-Command-Line">commandline</a> had been my go-to way of using git for a long time, till I came across the world of emacs and <a href="https://magit.vc/manual/magit.html">magit</a>. In this entry, we will set up vanilla emacs with <a href="https://magit.vc/manual/magit.html">magit</a>.</p>
+<h2 id="prerequisites">Prerequisites</h2>
+<ol>
+<li>A cloned git repo in your local machine</li>
+<li>Download vanilla emacs for macos from <a href="https://emacsformacosx.com">https://emacsformacosx.com</a> and for other OSes from <a href="https://www.gnu.org/software/emacs/download.html">here</a>.</li>
+</ol>
+<h2 id="magit-installation">Magit installation</h2>
+<ol>
+<li>
+<p>If you are a first time emacs user, create a .emacs file in your root path</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">touch ~/.emacs
+</code></pre></div></li>
+<li>
+<p>Copy this snippet into your <code>.emacs</code> file to install the <a href="https://github.com/raxod502/straight.el">straight.el</a> package manager</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-elisp" data-lang="elisp">(defvar bootstrap-version)
+(let ((bootstrap-file
+       (<span style="color:#a6e22e">expand-file-name</span> <span style="color:#e6db74">&#34;straight/repos/straight.el/bootstrap.el&#34;</span> user-emacs-directory))
+      (bootstrap-version <span style="color:#ae81ff">5</span>))
+  (unless (<span style="color:#a6e22e">file-exists-p</span> bootstrap-file)
+    (with-current-buffer
+	(url-retrieve-synchronously
+     <span style="color:#e6db74">&#34;https://raw.githubusercontent.com/raxod502/straight.el/develop/install.el&#34;</span>
+     <span style="color:#e6db74">&#39;silent</span> <span style="color:#e6db74">&#39;inhibit-cookies</span>)
+      (<span style="color:#a6e22e">goto-char</span> (<span style="color:#a6e22e">point-max</span>))
+      (eval-print-last-sexp)))
+  (<span style="color:#a6e22e">load</span> bootstrap-file <span style="color:#66d9ef">nil</span> <span style="color:#e6db74">&#39;nomessage</span>))
+</code></pre></div></li>
+<li>
+<p>Append the following line to <code>.emacs</code> file after the above snippet to install magit</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-elisp" data-lang="elisp">(straight-use-package <span style="color:#e6db74">&#39;magit</span>)
+</code></pre></div></li>
+<li>
+<p>To start the installation, type <code>alt-x</code> and type <code>eval-buffer</code></p>
+</li>
+</ol>
+<h2 id="using-magit">Using Magit</h2>
+<ol>
+<li>
+<p>Open the emacs GUI - typing <code>emacs</code> in spotlight search (press <code>cmd + space</code>) should open up. If it doesnt help, just click on Emacs executable.
+Emacs can be found in this path <code>/usr/local/bin/emacs</code></p>
+</li>
+<li>
+<p>Once inside emacs, type the following <code>Ctl-x Ctl-f</code>, enter the path of a file in your cloned git repo and press enter</p>
+<ul>
+<li>If you find the above step hard, you can just go to the menu bar of emacs and open your file using the GUI</li>
+</ul>
+</li>
+<li>
+<p>The previous step should open up the file, now press <code>Ctl-x g</code> and voila, you should see the following window</p>
+<figure><img src="/ox-hugo/start_page.png"
+         alt="Figure 1: magit first page"/><figcaption>
+            <p>Figure 1: magit first page</p>
+        </figcaption>
+</figure>
+
+</li>
+<li>
+<p>There are collapsed and uncollapsed sections. Just moving to the section and clicking <code>tab</code> key will expand or collapse the section</p>
+<figure><img src="/ox-hugo/expanded_unstaged.png"
+         alt="Figure 2: Unstaged section expanded"/><figcaption>
+            <p>Figure 2: Unstaged section expanded</p>
+        </figcaption>
+</figure>
+
+</li>
+<li>
+<p>Go to any file listed in the unstaged section and press <code>tab</code> key again which will show you the chunks. You can use the following commands on each chunk</p>
+<figure><img src="/ox-hugo/basic_commands.png"
+         alt="Figure 3: Basic commands"/><figcaption>
+            <p>Figure 3: Basic commands</p>
+        </figcaption>
+</figure>
+
+</li>
+<li>
+<p>To navigate this screen, you can use normal keyboard arrows or mouse. But to get the real speed advantage of emacs you can use the following shortcuts</p>
+<ul>
+<li><code>n</code> - will take you to the next chunk from current position</li>
+<li><code>p</code> - will take you to the previous chunk from current position</li>
+<li><code>Ctl + n</code> - will take you to the next line</li>
+<li><code>ctl + p</code> - will take you to the previous line</li>
+</ul>
+</li>
+<li>
+<p>Once you have staged the right chunks and files by pressing <code>s</code>, you can press <code>c</code>, it will open the following screen with all available commit options</p>
+<figure><img src="/ox-hugo/commit_options.png"
+         alt="Figure 4: Commit Options"/><figcaption>
+            <p>Figure 4: Commit Options</p>
+        </figcaption>
+</figure>
+
+</li>
+<li>
+<p>Lets just explore basic commit for now, press <code>c</code> again, it will open a buffer to type your commit msg</p>
+</li>
+<li>
+<p>Press <code>Ctl-c Ctl-k</code> if you want to abort, or type the commit message and press <code>Ctl-c Ctl-c</code> if you would like to go ahead n commit</p>
+</li>
+<li>
+<p>Similar to how <code>c</code> opened the commit options. Pressing <code>shift-p</code> (<strong>P</strong>) will open the push options</p>
+<figure><img src="/ox-hugo/push_options.png"
+         alt="Figure 5: Push Options"/><figcaption>
+            <p>Figure 5: Push Options</p>
+        </figcaption>
+</figure>
+
+</li>
+<li>
+<p>Pressing <code>p</code> again now will push the commit to your repository</p>
+</li>
+</ol>
+<p>If you are completely new to emacs, the inhouse tutorial in emacs can be invoked by typing <code>Ctl-h t</code> which will give you a quick way to learn emacs basics.</p>
+<div class="alert-note alert">
+  <div></div>
+<p>At any point, if you have two buffers open in your emacs, place your cursor in the buffer of your choice and press <code>ctl-x 1</code> to show only that window</p>
+</div>
+            </div>
+        </article>
+
+        <hr />
+
+        <div class="post-info">
+  				<p>
+  					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg><span class="tag"><a href="https://thearjunmdas.github.io/tags/emacs">emacs</a></span>
+  				</p>
+  		</div>
+    </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>&copy; 2021</span>
+            
+            
+                <span><a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a></span>
+            
+            <span> <a href="https://thearjunmdas.github.io/entries/index.xml" target="_blank" title="rss"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a></span>
+        </div>
+    </div>
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span><a href="https://github.com/thearjunmdas"> <b>Ar</b>jun <b>M</b> <b>D</b>as</a></span>
+        </div>
+    </div>
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+
+<script type="text/javascript" src="/bundle.min.a0f363fdf81cdc5cfacc447a79c33189eb000d090336cd04aac8ee256f423b3133b836c281944c19c75e38d0b0b449f01ce5807e37798b7ac94ac1db51983fc4.js" integrity="sha512-oPNj/fgc3Fz6zER6ecMxiesADQkDNs0EqsjuJW9COzEzuDbCgZRMGcdeONCwtEnwHOWAfjd5i3rJSsHbUZg/xA=="></script>
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-175966654-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+
+
+    </body>
+</html>

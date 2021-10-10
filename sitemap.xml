@@ -3,25 +3,28 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://thearjunmdas.github.io/</loc>
-    <lastmod>2021-09-01T07:23:16+05:30</lastmod>
+    <lastmod>2021-10-10T08:59:27+05:30</lastmod>
   </url><url>
     <loc>https://thearjunmdas.github.io/categories/</loc>
-    <lastmod>2021-09-01T07:23:16+05:30</lastmod>
+    <lastmod>2021-10-10T08:59:27+05:30</lastmod>
   </url><url>
     <loc>https://thearjunmdas.github.io/categories/developer/</loc>
-    <lastmod>2021-09-01T07:23:16+05:30</lastmod>
+    <lastmod>2021-10-10T08:59:27+05:30</lastmod>
   </url><url>
     <loc>https://thearjunmdas.github.io/tags/emacs/</loc>
-    <lastmod>2021-09-01T07:12:46+05:30</lastmod>
+    <lastmod>2021-10-10T08:59:27+05:30</lastmod>
+  </url><url>
+    <loc>https://thearjunmdas.github.io/entries/magit-emacs-as-git-client/</loc>
+    <lastmod>2021-10-10T08:59:27+05:30</lastmod>
+  </url><url>
+    <loc>https://thearjunmdas.github.io/tags/</loc>
+    <lastmod>2021-10-10T08:59:27+05:30</lastmod>
   </url><url>
     <loc>https://thearjunmdas.github.io/tags/orgmode/</loc>
     <lastmod>2021-09-01T07:12:46+05:30</lastmod>
   </url><url>
     <loc>https://thearjunmdas.github.io/entries/plot-graphs-in-emacs-org-mode/</loc>
     <lastmod>2021-09-01T07:12:46+05:30</lastmod>
-  </url><url>
-    <loc>https://thearjunmdas.github.io/tags/</loc>
-    <lastmod>2021-09-01T07:23:16+05:30</lastmod>
   </url><url>
     <loc>https://thearjunmdas.github.io/entries/tables-in-emacs-org-mode/</loc>
     <lastmod>2021-08-04T21:33:47+05:30</lastmod>

@@ -7,7 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Mon, 30 Aug 2021 07:08:00 +0530</lastBuildDate><atom:link href="https://thearjunmdas.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 09 Oct 2021 21:33:00 +0530</lastBuildDate><atom:link href="https://thearjunmdas.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Magit (Emacs) as git client</title>
+      <link>https://thearjunmdas.github.io/entries/magit-emacs-as-git-client/</link>
+      <pubDate>Sat, 09 Oct 2021 21:33:00 +0530</pubDate>
+      
+      <guid>https://thearjunmdas.github.io/entries/magit-emacs-as-git-client/</guid>
+      <description>Git commandline had been my go-to way of using git for a long time, till I came across the world of emacs and magit. In this entry, we will set up vanilla emacs with magit.
+Prerequisites  A cloned git repo in your local machine Download vanilla emacs for macos from https://emacsformacosx.com and for other OSes from here.  Magit installation   If you are a first time emacs user, create a .</description>
+    </item>
+    
     <item>
       <title>Plot graphs in emacs org-mode</title>
       <link>https://thearjunmdas.github.io/entries/plot-graphs-in-emacs-org-mode/</link>
