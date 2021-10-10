@@ -15,7 +15,8 @@
       
       <guid>https://thearjunmdas.github.io/entries/magit-emacs-as-git-client/</guid>
       <description>Git commandline had been my go-to way of using git for a long time, till I came across the world of emacs and magit. In this entry, we will set up vanilla emacs with magit.
-Prerequisites  A cloned git repo in your local machine Download vanilla emacs for macos from https://emacsformacosx.com and for other OSes from here.  Magit installation   If you are a first time emacs user, create a .</description>
+ div.alert a { color: #0000AA }   Emacs is an all in one text editor. Magit is an interface to the version control system Git, implemented as an Emacs package.
+ Prerequisites  A cloned git repo in your local machine Download vanilla emacs for macos from https://emacsformacosx.</description>
     </item>
     
     <item>
